@@ -1,0 +1,16 @@
+credentials:
+  usernames:
+    lg:
+      email: teste@gmail
+      logged_in: False
+      name: Luiz Guilherme
+      password: '12345'
+    facundes:
+      email: facundes@gmail.com
+      logged_in: False
+      name: Facundade
+      password: '123456'
+cookie:
+  expiry_days: 1
+  key: some_signature_key
+  name: some_cookie_name
