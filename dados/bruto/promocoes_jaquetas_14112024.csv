@@ -1,91 +1,97 @@
-Produto,Marca,Preço,Preço Original,Desconto
-Jaqueta D. D. Shell,C.P. Company,R$ 6.793,R$ 8.481,-20%
-Jaqueta de capuz com logo,Canada Goose,R$ 13.516,R$ 15.894,-15%
-Jaqueta Kentz matelassê,Mackage,R$ 10.168,R$ 12.700,-20%
-Jaqueta Ami De Coeur matelassê,AMI Paris,R$ 7.685,R$ 12.781,-40%
-Jaqueta Retro Nuptse matelassê 1996,The North Face,R$ 6.831,R$ 7.586,-10%
-Jaqueta encerada com colarinho,Barbour,R$ 3.226,R$ 5.349,-40%
-Jaqueta Chrome-R,C.P. Company,R$ 7.595,R$ 8.929,-15%
-Jaqueta HyBridge®,Canada Goose,R$ 10.475,R$ 13.953,-25%
-Jaqueta Ami De Coeur matelassê,AMI Paris,R$ 7.685,R$ 12.781,-40%
-Jaqueta bomber 5096 Take Tora MA-1,Maharishi,R$ 8.470,R$ 10.321,-15%
-Jaqueta matelassê Lutz,Barbour,R$ 3.782,R$ 4.198,-10%
-Jaqueta matelassê com patch de logo,Canada Goose,R$ 13.516,R$ 15.894,-15%
-Jaqueta matelassê com logo,Off-White,R$ 19.267,R$ 24.074,-20%
-Jaqueta matelassê com acabamento laminado,Herno,R$ 8.180,R$ 10.476,-20%
-Jaqueta matelassê com capuz,ENTIRE STUDIOS,R$ 9.517,R$ 13.578,-30%
-Jaqueta matelassê color block,The North Face,R$ 3.264,R$ 4.646,-30%
-Jaqueta matelassê com logo,DSQUARED2,R$ 7.637,R$ 12.700,-40%
-Jaqueta matelassê com patch de logo,Emporio Armani,R$ 4.517,R$ 6.435,-30%
-Jaqueta com recortes matelassê,Herno,R$ 5.725,R$ 8.161,-30%
-Jaqueta com estampa de logo,Ea7 Emporio Armani,R$ 2.785,R$ 4.262,-35%
-Jaqueta matelassê Lutz,Barbour,R$ 4.172,R$ 4.390,-15%
-Jaqueta OG Active,Carhartt WIP,R$ 2.726,R$ 3.201,-20%
-Jaqueta matelassê envernizada com capuz,Herno,R$ 6.640,R$ 8.289,-20%
-Jaqueta x Yinka Ilori dupla face,The North Face,R$ 2.599,R$ 3.239,-10%
-Jaqueta x Yinka Ilori,The North Face,R$ 7.999,R$ 9.085,-20%
-Jaqueta matelassê com zíper,Moorer,R$ 13.864,R$ 17.993,-30%
-Colete Freestyle com aplicação de logo,Canada Goose,R$ 6.212,R$ 8.856,-10%
-Jaqueta Rocky Balboa,FRANZESE COLLECTION,R$ 20.754,R$ 23.056,-20%
-Jaqueta com estampa de logo,The North Face,R$ 3.622,R$ 4.518,-25%
-Jaqueta bomber com colarinho inglês,OUR LEGACY,R$ 5.316,R$ 7.075,-25%
-Jaqueta encerada com colarinho,Barbour,R$ 4.022,R$ 5.349,-25%
-Jaqueta Cloud matelassê,Moose Knuckles,R$ 9.744,R$ 12.978,-50%
-Camisa Timber de algodão xadrez,Woolrich,R$ 2.919,R$ 5.796,-10%
-Jaqueta D.D. com capuz,C.P. Company,R$ 7.752,R$ 8.609,-15%
-Colete Retro Nuptse 1996,The North Face,R$ 3.085,R$ 3.623,-20%
-Jaqueta matelassê com motivo Compass,Stone Island,R$ 18.923,R$ 19.917,-10%
-Jaqueta Sten matelassê,Pyrenex,R$ 5.668,R$ 7.075,-20%
-Jaqueta Crafton,Canada Goose,R$ 13.681,R$ 15.197,-20%
-Jaqueta Pro-Tek matelassê,C.P. Company,R$ 5.508,R$ 5.796,-40%
-Jaqueta Black Label Lodge,Canada Goose,R$ 8.412,R$ 10.505,-20%
-Jaqueta Mythic com zíper,Pyrenex,R$ 5.105,R$ 6.372,-15%
-Jaqueta matelassê com patch de logo,DSQUARED2,R$ 9.938,R$ 16.536,-35%
-Jaqueta matelassê Polo Pony,Polo Ralph Lauren,R$ 3.237,R$ 4.139,-40%
-Jaqueta Prentis Liner,Carhartt WIP,R$ 1.879,R$ 2.204,-25%
-Jaqueta MML matelassê,ENTIRE STUDIOS,R$ 8.840,R$ 13.578,-20%
-Jaqueta matelassê com recortes,The North Face,R$ 4.329,R$ 4.555,-20%
-Jaqueta Ami De Coeur com recortes,AMI Paris,R$ 3.474,R$ 5.762,-10%
-Jaqueta com motivo Polo Pony,Polo Ralph Lauren,R$ 4.646,R$ 6.181,-20%
-Jaqueta D. D. Shell,C.P. Company,R$ 6.793,R$ 8.481,-15%
-Jaqueta matelassê com aplicação de logo,AMI Paris,R$ 12.316,R$ 15.385,-10%
-Jaqueta Slight,OUR LEGACY,R$ 5.205,R$ 5.780,-25%
-Colete Garson matelassê,Canada Goose,R$ 8.108,R$ 10.124,-10%
-Jaqueta matelassê com zíper,ROA,R$ 7.541,R$ 8.865,-50%
-Jaqueta Ace,OUR LEGACY,R$ 7.500,R$ 8.329,-20%
-Jaqueta com placa de logo,Herno,R$ 7.100,R$ 9.453,-10%
-Jaqueta college Givenchy,Givenchy,R$ 23.064,R$ 25.845,-30%
-Jaqueta matelassê com logo,Karl Lagerfeld Jeans,R$ 1.970,R$ 3.897,-25%
-Jaqueta bomber lisa,Fred Perry,R$ 2.654,R$ 2.792,-20%
-Jaqueta Bedale®,Barbour,R$ 4.543,R$ 5.668,-50%
-Jaqueta Medium DD Shell,C.P. Company,R$ 7.752,R$ 8.609,-25%
-Jaqueta bomber com logo,Off-White,R$ 11.956,R$ 17.062,-20%
-Jaqueta bomber Bones,AMIRI,R$ 17.974,R$ 23.951,-25%
-Jaqueta Heavy matelassê,ROA,R$ 9.145,R$ 11.422,-10%
-Bones appliqué-detail varsity jacket,AMIRI,R$ 9.705,R$ 19.369,-15%
-Jaqueta Beaton matelassê,Polo Ralph Lauren,R$ 4.074,R$ 5.418,-20%
-Jaqueta corta-vento com logo e zíper,Balenciaga,R$ 19.243,R$ 24.253,-30%
-Jaqueta acolchoada com detalhe Lens,C.P. Company,R$ 6.707,R$ 8.929,-25%
-Agasalho de fleece com logo,The North Face,R$ 3.333,R$ 3.367,-10%
-Jaqueta matelassê com zíper,Herno,R$ 9.509,R$ 10.562,-10%
-Jaqueta degradê escovada,BARROW,R$ 3.140,R$ 3.687,-50%
-Jaqueta bomber com logo bordado,Sporty & Rich,R$ 4.263,R$ 5.365,-35%
-Colete D.D Shell,C.P. Company,R$ 4.472,R$ 6.372,-25%
-Jaqueta Original 3Q,Moose Knuckles,R$ 11.218,R$ 14.943,-10%
-Blazer descontruído com listras 4-Bar,Thom Browne,R$ 22.825,R$ 25.357,-15%
-Jaqueta Wyndham matelassê,Canada Goose,R$ 18.018,R$ 20.016,-35%
-Jaqueta matelassê com padronagem monogramada,Karl Lagerfeld Jeans,R$ 1.970,R$ 3.897,-30%
-Jaqueta Laurel com logo bordado,Casablanca,R$ 7.531,R$ 11.564,-25%
-Jaqueta esportiva com listras triplas,Y-3,R$ 2.727,R$ 3.623,-25%
-Jaqueta Liddesdale com abotoamento,Barbour,R$ 3.264,R$ 3.623,-10%
-Jaqueta matelassê impermeável,Lacoste,R$ 2.845,R$ 3.340,-50%
-Jaqueta matelassê com detalhe de fivela,1017 ALYX 9SM,R$ 9.661,R$ 14.841,-25%
-Jaqueta Illusion,Axel Arigato,R$ 3.529,R$ 5.024,-10%
-Jaqueta bomber Hollywood,AMIRI,R$ 13.693,R$ 19.167,-35%
-Jaqueta matelassê Crofton,Canada Goose,R$ 6.515,R$ 8.673,-40%
-Jaqueta de capuz com detalhe Lens,C.P. Company,R$ 4.663,R$ 5.177,-40%
-Jaqueta matelassê,Rossignol,R$ 1.570,R$ 3.098,-20%
-Colete Garson matelassê,Canada Goose,R$ 7.790,R$ 10.373,-20%
-Jaqueta Retro Nuptse matelassê 1996,The North Face,R$ 6.946,R$ 7.714,-40%
-Jaqueta Laurel de plush,Casablanca,R$ 8.639,R$ 13.268,-25%
-Jaqueta Ami De Coeur matelassê,AMI Paris,R$ 7.685,R$ 12.781,-20%
+Produto,Marca,Preço,Preço Original
+Jaqueta Ami De Coeur matelassê,AMI Paris,R$ 8.832,R$ 12.781
+Blazer xadrez Prince of Wales,Balmain,R$ 15.562,R$ 25.909
+Jaqueta Retro Nuptse matelassê 1996,The North Face,R$ 6.831,R$ 7.586
+Blazer com abotoamento simples,Canali,R$ 15.496,R$ 19.359
+Jaqueta militar com abotoamento,Balmain,R$ 9.343,R$ 20.710
+Camisa Timber de algodão xadrez,Woolrich,R$ 2.919,R$ 5.796
+Jaqueta Laurel com logo bordado,Casablanca,R$ 7.531,R$ 11.564
+Jaqueta de algodão com abotoamento,Courrèges,R$ 2.772,R$ 3.942
+Jaqueta Laurel de plush,Casablanca,R$ 8.639,R$ 13.268
+Jaqueta matelassê,Rossignol,R$ 1.570,R$ 3.098
+Jaqueta matelassê com patch de logo,Tommy Hilfiger,R$ 2.425,R$ 3.446
+Colete matelassê com zíper,Barbour,R$ 1.628,R$ 2.025
+Jaqueta matelassê com padronagem monogramada,Karl Lagerfeld Jeans,R$ 1.970,R$ 3.897
+Jaqueta Illusion,Axel Arigato,R$ 3.529,R$ 5.024
+Jaqueta com patch de logo,Balmain,R$ 6.840,R$ 11.400
+Jaqueta de capuz com detalhe Lens,C.P. Company,R$ 4.663,R$ 5.177
+Blazer com abotoamento duplo,Karl Lagerfeld,R$ 3.259,R$ 6.475
+Blazer xadrez com abotoamento simples,Canali,R$ 23.188,R$ 24.406
+Blazer xadrez com lapelas,ETRO,R$ 15.385,R$ 19.221
+Jaqueta bomber com monograma perfurado,Karl Lagerfeld,R$ 2.614,R$ 5.186
+Jaqueta Milo com zíper,AllSaints,R$ 6.777,R$ 7.132
+Jaqueta Boxy,LEMAIRE,R$ 5.892,R$ 9.792
+Jaqueta de couro com zíper,Giuseppe Zanotti,R$ 6.713,R$ 13.500
+Jaqueta matelassê com capuz,There Was One,R$ 2.152,R$ 7.075
+Jaqueta bomber com logo,Kenzo,R$ 6.858,R$ 9.780
+Jaqueta biker Ikonik de couro,Karl Lagerfeld,R$ 5.192,R$ 10.343
+Jaqueta matelassê de fleece,Polo Ralph Lauren,R$ 5.561,R$ 6.941
+Blazer com padronagem xadrez,Tagliatore,R$ 8.577,R$ 11.422
+Jaqueta bomber com patch de logo,Versace,R$ 16.375,R$ 23.375
+Jaqueta dupla face com estampa,Versace Jeans Couture,R$ 5.003,R$ 6.244
+Blazer com forro em cetim,Off-White,R$ 11.135,R$ 18.531
+Jaqueta matelassê com capuz e zíper,Diesel,R$ 4.171,R$ 5.941
+Jaqueta com patch de logo,Tommy Hilfiger,R$ 1.507,R$ 1.873
+Jaqueta x Carhartt em canvas,Junya Watanabe MAN,R$ 7.073,R$ 15.666
+Jaqueta com capuz removível,RLX Ralph Lauren,R$ 7.316,R$ 14.589
+Jaqueta matelassê com aplicação de logo,AMI Paris,R$ 12.316,R$ 15.385
+Jaqueta jeans Dan Jean respingos de tinta,DSQUARED2,R$ 8.414,R$ 9.891
+Jaqueta com detalhe de listras,There Was One,R$ 1.270,R$ 4.134
+Jaqueta matelassê com capuz,ENTIRE STUDIOS,R$ 9.517,R$ 13.578
+Jaqueta Polo Pony matelassê,Polo Ralph Lauren,R$ 4.180,R$ 5.560
+Jaqueta bomber color block com logo,Dolce & Gabbana,R$ 8.100,R$ 13.500
+Jaqueta G9 Harrington,Baracuta,R$ 4.430,R$ 5.528
+Jaqueta bomber com logo bordado,Sporty & Rich,R$ 4.263,R$ 5.365
+Jaqueta bomber Lucky Tiger com bordado,Kenzo,R$ 7.221,R$ 10.299
+Jaqueta matelassê,There Was One,R$ 2.152,R$ 7.075
+Jaqueta MML matelassê,ENTIRE STUDIOS,R$ 8.840,R$ 13.578
+Jaqueta Ami De Coeur com recortes,AMI Paris,R$ 3.474,R$ 5.762
+Jaqueta matelassê com estampa de logo,Off-White,R$ 15.662,R$ 24.074
+Agasalho de fleece com logo,The North Face,R$ 3.333,R$ 3.367
+Jaqueta de couro com recorte vazado,Golden Goose,R$ 16.343,R$ 19.221
+Jaqueta de algodão com zíper frontal,There Was One,R$ 1.481,R$ 4.837
+Blazer de lã com abotoamento simples,Balmain,R$ 14.601,R$ 18.400
+Jaqueta bomber Ami De Coeur,AMI Paris,R$ 6.905,R$ 11.481
+Jaqueta Ami De Coeur com recortes,AMI Paris,R$ 3.474,R$ 5.762
+Jaqueta leve com zíper,Moorer,R$ 12.214,R$ 16.271
+Blazer com padronagem espinha de peixe,Tagliatore,R$ 9.577,R$ 10.079
+Jaqueta La Chemise Boulanger,Jacquemus,R$ 6.077,R$ 7.586
+Jaqueta Ami De Coeur matelassê,AMI Paris,R$ 8.832,R$ 12.781
+Jaqueta matelassê com logo,DSQUARED2,R$ 10.168,R$ 12.700
+Jaqueta Silverbow,Woolrich,R$ 4.517,R$ 6.435
+Jaqueta matelassê com capuz e logo,Michael Kors,R$ 5.280,R$ 6.205
+Jaqueta de couro com logo,Off-White,R$ 14.264,R$ 23.746
+Jaqueta jeans com estampa de respingos,DSQUARED2,R$ 7.622,R$ 9.518
+Jaqueta Ariel Polarquilt com bolsos,Barbour,R$ 2.766,R$ 4.582
+Jaqueta camuflada,Off-White,R$ 12.024,R$ 24.007
+Colete com estampa gráfica,Yohji Yamamoto,R$ 23.493,R$ 27.631
+Jaqueta jeans Dan Jeand,DSQUARED2,R$ 6.593,R$ 8.777
+Jaqueta Himalayan matelassê com zíper,The North Face,R$ 2.459,R$ 3.496
+Jaqueta corta-vento com zíper frontal,There Was One,R$ 1.270,R$ 4.134
+Jaqueta de capuz com óculos,C.P. Company,R$ 5.379,R$ 5.973
+Jaqueta impermeável com capuz,Rains,R$ 2.037,R$ 2.536
+Jaqueta jeans com abotoamento,Diesel,R$ 8.076,R$ 14.649
+Jaqueta com padronagem xadrez,Burberry,R$ 8.170,R$ 10.291
+Jaqueta bomber de camurça,Salvatore Santoro,R$ 6.383,R$ 12.724
+Jaqueta matelassê com recortes,The North Face,R$ 4.329,R$ 4.555
+Jaqueta jeans com capuz,DSQUARED2,R$ 10.961,R$ 15.641
+Jaqueta esportiva com bordado monogramado,Palm Angels,R$ 5.028,R$ 7.713
+Jaqueta militar com respingos de tinta,Polo Ralph Lauren,R$ 4.637,R$ 7.701
+Jaqueta esportiva com logo bordado,Palm Angels,R$ 3.604,R$ 8.948
+'Beacon' jacket,Barbour,R$ 8.222,R$ 9.131
+Jaqueta Flatt de capuz com bolsos cargo,C.P. Company,R$ 7.050,R$ 10.054
+Parka gola alta com bolsos,There Was One,R$ 1.557,R$ 5.093
+Jaqueta com capuz,Rossignol,R$ 1.700,R$ 3.357
+Jaqueta Retro Nuptse matelassê 1996,The North Face,R$ 6.946,R$ 7.714
+Blazer com abotoamento simples,Herno,R$ 4.741,R$ 6.755
+Jaqueta cargo Transport de algodão,Barbour,R$ 4.875,R$ 8.098
+Jaqueta de veludo cotelê com recorte jeans,DSQUARED2,R$ 10.212,R$ 14.571
+Jaqueta jeans D-Lillo,Diesel,R$ 1.595,R$ 3.492
+Jaqueta jeans D-Barcy,Diesel,R$ 7.120,R$ 7.192
+Jaqueta de linho com abotoamento,Ferragamo,R$ 11.463,R$ 16.500
+Jaqueta com detalhe de listras,There Was One,R$ 1.270,R$ 4.134
+Jaqueta de couro,FURSAC,R$ 8.641,R$ 12.326
+Jaqueta com detalhe Shell-R Goggles,C.P. Company,R$ 4.880,R$ 5.135
+Jaqueta matelassê com detalhe de fivela,1017 ALYX 9SM,R$ 9.661,R$ 14.841
+Jaqueta com estampa chevron,Missoni,R$ 4.492,R$ 7.458
+Jaqueta esportiva com bordado monogramado,Palm Angels,R$ 3.139,R$ 7.784
