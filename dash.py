@@ -3,6 +3,7 @@ import pandas as pd
 import glob
 import os
 
+
 def get_latest_file(pattern="promocoes_jaquetas_*.csv"):
     # Obter o caminho absoluto para o diretório 'dados/bruto' relativo ao diretório atual
     pasta_base = os.path.join(os.getcwd(), 'dados', 'bruto')  # Garante que o caminho é montado a partir da raiz do projeto
