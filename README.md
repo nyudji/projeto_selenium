@@ -6,12 +6,13 @@ Realizado o web scrapping com selenium no site da Farfetch, ele entra no site de
 
 
 
-*Obs* Utilizando PySpark no Windows 11
+
+**Utilizando PySpark no Windows 11**
 
 Baixar:
-spark 3.5.0 >
-hadoop 3.3.6
-winutils 3.3.6
+spark 3.5.0 > ; 
+hadoop 3.3.6 ; 
+winutils 3.3.6 ; 
 jdk 11 >
 
 Extrair o spark no c:/spark, colocar o hadoop no c:/spark/hadoop/ , o winutils dentro do bin do hadoop e configurar as variaveis de ambiente do Windows, JAVA_HOME, SPARK_HOME, PYSPARK_HOME, HADOOP_HOME.
