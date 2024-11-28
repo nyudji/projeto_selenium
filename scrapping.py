@@ -7,6 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
+from tratamento import tratamento
 
 def run_scraping():
     # Abre o navegador
@@ -73,6 +74,9 @@ def run_scraping():
                     print(f"Erro ao processar o produto {i}: {e}")
                 finally:
                     print(f"Produto: {i} processado")
+                    print('Tratamento iniciado')
+                    tratamento()
+                    print('Tratamento Finalizado')
 
     except Exception as e:
         print(f"Erro ao fazer o scrapping")
