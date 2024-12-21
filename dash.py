@@ -29,14 +29,16 @@ def get_latest_file(pattern="promocoes_jaquetas_*.csv"):
 
 
 def display_dashboard():
-    st.header("Promocoes de Jaquetas - Farfetch")
-
-    # Obter o último arquivo de dados
     arquivo_mais_recente = get_latest_file()
     print(arquivo_mais_recente)
     if arquivo_mais_recente:
         data = pd.read_csv(arquivo_mais_recente)
         st.dataframe(data)  # Exibe os dados como tabela
+        dados_tratatos = 'dados/tratado/jaquetas_tratado.csv'
+        # Ler o arquivo csv
+        st.write("Dados Tratados")
+        data2 = pd.read_csv(dados_tratatos)
+        st.dataframe(data2)  # Exibe os dados como tabela
         # Adicione gráficos e outras análises a partir do DataFrame `data`
     else:
         st.warning("Nenhum arquivo de dados encontrado. Execute o scraping para preencher o dashboard.")

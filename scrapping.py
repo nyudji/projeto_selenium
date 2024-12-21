@@ -31,6 +31,9 @@ def run_scraping():
             print("Entrou no menu de Jaquetas!")
         except Exception as e:
             print("Erro ao clicar em Jaquetas:", e)
+            nav.refresh()
+            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ewmv8150') and text()='Jackets']")))
+            jackets_link.click()
             nav.quit()
 
         time.sleep(5)
@@ -74,12 +77,9 @@ def run_scraping():
                     print(f"Erro ao processar o produto {i}: {e}")
                 finally:
                     print(f"Produto: {i} processado")
-                    print('Tratamento iniciado')
-                    tratamento()
-                    print('Tratamento Finalizado')
 
     except Exception as e:
-        print(f"Erro ao fazer o scrapping")
+        print(f"Erro ao fazer o scrapping: {e}")
 
     if not produtos_lista:
         print("Erro: Nenhum produto encontrado para salvar. O scraping pode ter falhado.")
@@ -92,4 +92,7 @@ def run_scraping():
         nome_arquivo = f"promocoes_jaquetas_{data_atual}.csv"
         caminho_completo = os.path.join(pasta_base, nome_arquivo)
         df_produtos.to_csv(caminho_completo, index=False, encoding='utf-8')
-        print("WebScrapping feito e dados salvos em CSV com sucesso.")
+        print('Tratamento iniciado')
+        tratamento()
+        print('Tratamento Finalizado')
+        print("WebScrapping feito e dados salvos em CSV com sucesso.")    

@@ -7,6 +7,9 @@ from dash import display_dashboard  # Função para mostrar o dashboard
 import threading
 import time
 
+def atualizar_dashboard():
+    st.rerun()
+
 # Carregar as configurações do arquivo YAML
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -21,51 +24,67 @@ authenticator = stauth.Authenticate(
 
 authenticator.login()
 
+# Verificar se o usuário está autenticado
 if st.session_state["authentication_status"]:
-    authenticator.logout()
-    st.write(f'Bem Vindo *{st.session_state["name"]}*')
-    st.title('Página de Sistema')
+    col1, col2, col3 = st.columns([1.5, 2, 1]) 
+    with col1:
+        st.write(f'Bem Vindo *{st.session_state["name"]}*')
+    with col3:
+        authenticator.logout()
+    
+    st.sidebar.markdown("### Projeto Selenium:")
+    # Navegação entre as páginas
+    page = st.sidebar.radio("Escolha uma página", ("Scraping", "Dashboard"))
 
     # Inicializar a chave de progresso no session_state
     if "scraping_in_progress" not in st.session_state:
         st.session_state.scraping_in_progress = False
 
-    if st.button('Executar Scrapping'):
-        progress_bar = st.progress(0)
-        
-        # Iniciar o scraping em uma thread separada
-        if not st.session_state.scraping_in_progress:
-            st.session_state.scraping_in_progress = True
-            thread = threading.Thread(target=run_scraping)
-            thread.start()
+    # Página de Scraping
+    if page == "Scraping":
+        with col2:
+            st.title('Página de Scraping')    
+        with col1:
+            if st.button('Executar Scrapping'):
+                progress_bar = st.progress(0)
 
-            try:
-                # Atualizar a barra de progresso enquanto a thread estiver em execução
-                while thread.is_alive():
+                # Iniciar o scraping em uma thread separada
+                if not st.session_state.scraping_in_progress:
+                    st.session_state.scraping_in_progress = True
+                    thread = threading.Thread(target=run_scraping)
+                    thread.start()
+
                     try:
-                        current_progress = float(progress_bar.progress())  # Tentar a conversão para float
-                    except TypeError:
-                        current_progress = 0
-                    new_progress = current_progress + 0.15
-                    progress_bar.progress(new_progress)
-                    time.sleep(0.1)
-            except Exception as e:
-                # Exibir o erro na interface e resetar o estado do scraping
-                st.error(f"Ocorreu um erro durante o scraping: {e}")
-                st.session_state.scraping_in_progress = False
-                progress_bar.progress(0)  # Resetar a barra de progresso
-            else:
-                # Caso o scraping seja concluído sem erro
-                st.success("Scraping concluído com sucesso!")
-                new_progress = current_progress + 0.5
-                progress_bar.progress(new_progress)
-            finally:
-                # Resetar o estado do scraping
-                st.session_state.scraping_in_progress = False
-                progress_bar.progress(0)  # Resetar a barra de progresso
+                        # Atualizar a barra de progresso enquanto a thread estiver em execução
+                        while thread.is_alive():
+                            for i in range(100):
+                                # Lógica do seu scraping aqui
+                                time.sleep(1)  # Simula o tempo de scraping
 
-        # Exibir o dashboard após o scraping
+                                # Atualiza o progresso
+                                progress_bar.progress(i + 1)  # 'i + 1' para refletir o progresso de 1 a 100
+
+                            # Após o término do scraping
+                        st.success("Scraping finalizado!")
+                    except Exception as e:
+                        # Exibir o erro na interface e resetar o estado do scraping
+                        st.error(f"Ocorreu um erro durante o scraping: {e}")
+                        time.sleep(5)
+                        st.session_state.scraping_in_progress = False
+                        progress_bar.progress(0)  # Resetar a barra de progresso
+                    finally:
+                        # Resetar o estado do scraping
+                        st.session_state.scraping_in_progress = False
+                        progress_bar.progress(0)  # Resetar a barra de progresso
+                        atualizar_dashboard()
+        st.subheader('Ultimo scrapping feito')
         display_dashboard()
+    # Página de Dashboard
+    elif page == "Dashboard":
+        st.title('Dashboard')
+        st.header('Promoções jaquetas - Farfetch')
+        # Exibir o dashboard após o scraping
+        
 
 elif st.session_state["authentication_status"] is False:
     st.error('Usuário/Senha inválido')

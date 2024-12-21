@@ -98,15 +98,11 @@ def tratamento():
         
         #Tente salvar o DataFrame diretamente no caminho local
         try:
-        
-            #Criando um DataFrame de exemplo
-            data = [("João", 30), ("Maria", 25), ("Pedro", 35)]
-            columns = ["Nome", "Idade"]
 
-            df = spark.createDataFrame(data, columns)
-                    # Forçando o DataFrame a ser escrito em um único arquivo
-            output_path = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado"
-            df_jaquetas.coalesce(1).write.csv(output_path, mode="overwrite", header=True)
+            output_path_csv = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
+            output_path_parquet = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
+            df_jaquetas.coalesce(1).write.csv(output_path_csv, mode="overwrite", header=True)
+            df_jaquetas.coalesce(1).write.parquet(output_path_parquet, mode="append")
             output_path2 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado"
             #Encerrando a sessão do Spark
             spark.stop()
@@ -120,10 +116,31 @@ def tratamento():
                     #Valida que o arquivo não está vazio
                     if os.path.getsize(full_path) > 0:
                         os.rename(full_path, os.path.join(output_path2, "jaquetas_tratado.csv"))
+                        print("Arquivo CSV renomeado com sucesso!")
+                        
+                        #Tempo de espera em segundos (exemplo: 30 segundos)
+                        tempo_espera = 15
+
+                        #Espera para permitir a validação
+                        print(f"Aguardando {tempo_espera} segundos para validar o processo...")
+                        time.sleep(tempo_espera)
+
+                        #Remove arquivos desnecessários (_SUCCESS e .crc)
+                        for file in os.listdir(output_path2):
+                            if file.startswith("_SUCCESS") or file.endswith(".crc"):
+                                os.remove(os.path.join(output_path2, file))
+
+                        print("Arquivos auxiliares removidos após o tempo de espera.")
+                if file.startswith("part-") and file.endswith(".parquet"):
+                    full_path = os.path.join(output_path2, file)
+                    
+                    #Valida que o arquivo não está vazio
+                    if os.path.getsize(full_path) > 0:
+                        os.rename(full_path, os.path.join(output_path2, "jaquetas_tratado.parquet"))
                         print("Arquivo renomeado com sucesso!")
                         
                         #Tempo de espera em segundos (exemplo: 30 segundos)
-                        tempo_espera = 120
+                        tempo_espera = 15
 
                         #Espera para permitir a validação
                         print(f"Aguardando {tempo_espera} segundos para validar o processo...")
@@ -138,6 +155,7 @@ def tratamento():
                 
         except Exception as e:
             print(f"Erro ao salvar o arquivo: {e}")
+        
             
     except AnalysisException as e:
         print(f"Erro ao processar o arquivo CSV: {e}")
