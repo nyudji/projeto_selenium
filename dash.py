@@ -34,7 +34,7 @@ def display_dashboard():
     if arquivo_mais_recente:
         data = pd.read_csv(arquivo_mais_recente)
         st.dataframe(data)  # Exibe os dados como tabela
-        dados_tratatos = 'dados/tratado/jaquetas_tratado.csv'
+        dados_tratatos = 'dados/tratado/csv/jaquetas_tratado.csv'
         # Ler o arquivo csv
         st.write("Dados Tratados")
         data2 = pd.read_csv(dados_tratatos)

@@ -59,13 +59,14 @@ if st.session_state["authentication_status"]:
                         while thread.is_alive():
                             for i in range(100):
                                 # Lógica do seu scraping aqui
-                                time.sleep(1)  # Simula o tempo de scraping
+                                time.sleep(0.25)  # Simula o tempo de scraping
 
                                 # Atualiza o progresso
                                 progress_bar.progress(i + 1)  # 'i + 1' para refletir o progresso de 1 a 100
 
                             # Após o término do scraping
                         st.success("Scraping finalizado!")
+                        progress_bar.progress(0)
                     except Exception as e:
                         # Exibir o erro na interface e resetar o estado do scraping
                         st.error(f"Ocorreu um erro durante o scraping: {e}")

@@ -55,9 +55,7 @@ def tratamento():
         df_jaquetas = df_jaquetas.withColumn(
             "Preço Original", col("Preço Original").cast("int")
         )
-        df_jaquetas = df_jaquetas.withColumn(
-            "Preço", col("Preço Original").cast("int")
-        )
+        
         #Categorizando Luxo
         df_jaquetas = df_jaquetas.withColumn(
             "Categoria Luxo",
@@ -98,17 +96,27 @@ def tratamento():
         
         #Tente salvar o DataFrame diretamente no caminho local
         try:
-
             output_path_csv = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
             output_path_parquet = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
             df_jaquetas.coalesce(1).write.csv(output_path_csv, mode="overwrite", header=True)
-            df_jaquetas.coalesce(1).write.parquet(output_path_parquet, mode="append")
-            output_path2 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado"
+            try:
+                df_existing = spark.read.parquet(output_path_parquet)
+                # Combine com os dados de df_jaquetas
+                df_combined = df_existing.union(df_jaquetas)
+            except Exception:
+                # Se o diretório estiver vazio ou não existir, use apenas df_jaquetas
+                df_combined = df_jaquetas
+
+                # Consolidar em um único arquivo e sobrescrever
+            df_combined.coalesce(1).write.mode("append").parquet(output_path_parquet)
+            output_path2 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
+            output_path1 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
             #Encerrando a sessão do Spark
             spark.stop()
             print('Spark parado')
             print('Tratamento salvo em dado/tratado')
-
+            df_pandas = df_jaquetas.toPandas()
+            df_pandas.to_csv('C:\\Users\\JPA\\Desktop\\Projetos\\Selenium\\projeto_selenium\\dados\\tratado\\csv\\jaquetas_todos.csv', mode='a', header=False, index=False)
             for file in os.listdir(output_path2):
                 if file.startswith("part-") and file.endswith(".csv"):
                     full_path = os.path.join(output_path2, file)
@@ -131,13 +139,15 @@ def tratamento():
                                 os.remove(os.path.join(output_path2, file))
 
                         print("Arquivos auxiliares removidos após o tempo de espera.")
+
+            for file in os.listdir(output_path1):
                 if file.startswith("part-") and file.endswith(".parquet"):
-                    full_path = os.path.join(output_path2, file)
+                    full_path = os.path.join(output_path1, file)
                     
                     #Valida que o arquivo não está vazio
                     if os.path.getsize(full_path) > 0:
-                        os.rename(full_path, os.path.join(output_path2, "jaquetas_tratado.parquet"))
-                        print("Arquivo renomeado com sucesso!")
+                        shutil.copy(full_path, os.path.join(output_path1, "dados_tratado.parquet"))
+                        print("Arquivo parquet copiado renomeado com sucesso!")
                         
                         #Tempo de espera em segundos (exemplo: 30 segundos)
                         tempo_espera = 15
@@ -147,9 +157,9 @@ def tratamento():
                         time.sleep(tempo_espera)
 
                         #Remove arquivos desnecessários (_SUCCESS e .crc)
-                        for file in os.listdir(output_path2):
-                            if file.startswith("_SUCCESS") or file.endswith(".crc"):
-                                os.remove(os.path.join(output_path2, file))
+                        for file in os.listdir(output_path1):
+                            if file.startswith("_SUCCESS") or file.endswith(".crc") or file.startswith("part-"):
+                                os.remove(os.path.join(output_path1, file))
 
                         print("Arquivos auxiliares removidos após o tempo de espera.")
                 

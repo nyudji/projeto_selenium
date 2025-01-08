@@ -79,7 +79,7 @@ def run_scraping():
                     print(f"Produto: {i} processado")
 
     except Exception as e:
-        print(f"Erro ao fazer o scrapping: {e}")
+        print(f"Erro ao fazer o scraping: {e}")
 
     if not produtos_lista:
         print("Erro: Nenhum produto encontrado para salvar. O scraping pode ter falhado.")
@@ -91,8 +91,21 @@ def run_scraping():
         os.makedirs(pasta_base, exist_ok=True)
         nome_arquivo = f"promocoes_jaquetas_{data_atual}.csv"
         caminho_completo = os.path.join(pasta_base, nome_arquivo)
-        df_produtos.to_csv(caminho_completo, index=False, encoding='utf-8')
+        if os.path.exists(caminho_completo):
+            # Se o arquivo já existe, faz o append (adiciona ao final)
+            contador = 1
+            while os.path.exists(caminho_completo):
+                contador += 1
+                nome_arquivo = f"promocoes_jaquetas_{data_atual}_{contador}.csv"
+                caminho_completo = os.path.join(pasta_base, nome_arquivo)
+            df_produtos.to_csv(caminho_completo, header=False, index=False, encoding='utf-8')
+            print(f"Promoção de hoje já existe. Dados adicionados ao arquivo: {caminho_completo}")
+        else:
+            # Se o arquivo não existe, cria um novo
+            df_produtos.to_csv(caminho_completo, index=False, encoding='utf-8')
+            print(f"Arquivo de promoção de hoje criado: {caminho_completo}")
+
         print('Tratamento iniciado')
         tratamento()
         print('Tratamento Finalizado')
-        print("WebScrapping feito e dados salvos em CSV com sucesso.")    
+        print("Scraping feito e dados salvos com sucesso.")    
