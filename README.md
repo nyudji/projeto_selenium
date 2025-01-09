@@ -5,21 +5,29 @@
 <br>
 Sistema analítico, com login, com dashboard de produtos extraidos com Selenium, em Python usando Streamlit e PySpark para o ETL.
 
-Realizado o web scrapping com selenium no site da Farfetch, ele entra no site depois vai em promoções e depois na sessão de jaquetas, feito um sistema em Streamlit com botão para executar o scrapping e um dash interativo também para insights dos dados gerados.
-## Ferramentas
+
+## Scrapping
+- Entra no site da Farfetch
+- Entra na seções de promoções de jaquetas
+- Pega os produtos
+- Realiza o Tratamento
+- Salva em CSV e Parquet os dados brutos e tratados
+
+
+## Funções
+- Login Streamlit
+- Scraping de produtos
+- ETL com Spark e Pandas
+- Dash e Painel com Streamlit
+- CSV e Parquet
+
+ ## Ferramentas
 - Python
 - Selenium
 - Streamlit
 - Pandas
 - Spark
-
-
-## Funções
-- Scraping de produtos
-- ETL com Spark e Pandas
-- Dash e painel com Streamlit
-- CSV e Parquet
-  
+   
 <div align="center">
 </div>
 
