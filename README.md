@@ -25,10 +25,10 @@ Realizado o web scrapping com selenium no site da Farfetch, ele entra no site de
 
 ## Requirements
 - Python 3.12
-- `streamlit` - plataforma web
-- `pandas` - manipulação de dados
-- `selenium` - scraping
-- `spark` - etl
+- `streamlit` 
+- `pandas`
+- `selenium` 
+- `spark` 
 
 <div align="center">
 <h1>Utilizando PySpark no Windows 11</h1>
