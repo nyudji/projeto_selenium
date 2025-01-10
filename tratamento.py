@@ -98,7 +98,7 @@ def tratamento():
         try:
             output_path_csv = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
             output_path_parquet = "file:///C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
-            df_jaquetas.coalesce(1).write.csv(output_path_csv, mode="overwrite", header=True)
+            df_jaquetas.coalesce(1).write.csv(output_path_csv, mode="append", header=True)
             try:
                 df_existing = spark.read.parquet(output_path_parquet)
                 # Combine com os dados de df_jaquetas
@@ -111,21 +111,15 @@ def tratamento():
             df_combined.coalesce(1).write.mode("append").parquet(output_path_parquet)
             output_path2 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
             output_path1 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
-            #Encerrando a sessão do Spark
-            spark.stop()
-            print('Spark parado')
+            
             print('Tratamento salvo em dado/tratado')
-            df_pandas = df_jaquetas.toPandas()
-            df_pandas.to_csv('C:\\Users\\JPA\\Desktop\\Projetos\\Selenium\\projeto_selenium\\dados\\tratado\\csv\\jaquetas_todos.csv', mode='a', header=False, index=False)
             for file in os.listdir(output_path2):
                 if file.startswith("part-") and file.endswith(".csv"):
                     full_path = os.path.join(output_path2, file)
-                    
                     #Valida que o arquivo não está vazio
                     if os.path.getsize(full_path) > 0:
-                        os.rename(full_path, os.path.join(output_path2, "jaquetas_tratado.csv"))
+                        shutil.copy(full_path, os.path.join(output_path2, "jaquetas_tratado.csv"))
                         print("Arquivo CSV renomeado com sucesso!")
-                        
                         #Tempo de espera em segundos (exemplo: 30 segundos)
                         tempo_espera = 15
 
@@ -135,10 +129,11 @@ def tratamento():
 
                         #Remove arquivos desnecessários (_SUCCESS e .crc)
                         for file in os.listdir(output_path2):
-                            if file.startswith("_SUCCESS") or file.endswith(".crc"):
+                            if file.startswith("_SUCCESS") or file.endswith(".crc") or file.startswith("part-"):
                                 os.remove(os.path.join(output_path2, file))
 
                         print("Arquivos auxiliares removidos após o tempo de espera.")
+
 
             for file in os.listdir(output_path1):
                 if file.startswith("part-") and file.endswith(".parquet"):
@@ -162,10 +157,14 @@ def tratamento():
                                 os.remove(os.path.join(output_path1, file))
 
                         print("Arquivos auxiliares removidos após o tempo de espera.")
-                
+            df_pandas = df_jaquetas.toPandas()
+            df_pandas.to_csv('C:\\Users\\JPA\\Desktop\\Projetos\\Selenium\\projeto_selenium\\dados\\tratado\\csv\\jaquetas_todos.csv', mode='a', header=True, index=False)
+            print("Arquivo CSV com todos criado com sucesso!")    
         except Exception as e:
             print(f"Erro ao salvar o arquivo: {e}")
-        
+        #Encerrando a sessão do Spark
+        spark.stop()
+        print('Spark parado')
             
     except AnalysisException as e:
         print(f"Erro ao processar o arquivo CSV: {e}")

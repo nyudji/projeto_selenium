@@ -98,7 +98,7 @@ def run_scraping():
                 contador += 1
                 nome_arquivo = f"promocoes_jaquetas_{data_atual}_{contador}.csv"
                 caminho_completo = os.path.join(pasta_base, nome_arquivo)
-            df_produtos.to_csv(caminho_completo, header=False, index=False, encoding='utf-8')
+            df_produtos.to_csv(caminho_completo, header=True, index=False, encoding='utf-8')
             print(f"Promoção de hoje já existe. Dados adicionados ao arquivo: {caminho_completo}")
         else:
             # Se o arquivo não existe, cria um novo
