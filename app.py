@@ -3,7 +3,7 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
 from scrapping import run_scraping  # Função do scraper
-from dash import display_dashboard  # Função para mostrar o dashboard
+from dash import display_dashboard, display_dash2  # Função para mostrar o dashboard
 import threading
 import time
 
@@ -82,8 +82,9 @@ if st.session_state["authentication_status"]:
         display_dashboard()
     # Página de Dashboard
     elif page == "Dashboard":
-        st.title('Dashboard')
-        st.header('Promoções jaquetas - Farfetch')
+        with col2:
+            st.title('Dashboard')
+        display_dash2()
         # Exibir o dashboard após o scraping
         
 
