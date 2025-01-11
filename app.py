@@ -42,6 +42,7 @@ if st.session_state["authentication_status"]:
 
     # Página de Scraping
     if page == "Scraping":
+        st.divider()
         with col2:
             st.title('Página de Scraping')    
         with col1:

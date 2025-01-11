@@ -93,7 +93,7 @@ def display_dash2():
     preco_medio = int(df_filtrado['Preço'].mean())
     desconto_medio = int(df_filtrado['Desconto Percentual'].mean())
     contagem_produtos = df_filtrado.shape[0]
-
+    st.divider()
     col1, col2, col3, = st.columns(3)
     with col1:
         st.subheader('Preço médio')
@@ -104,6 +104,6 @@ def display_dash2():
     with col3:
         st.subheader('Total ofertas')
         st.subheader(f'{contagem_produtos}')
-
+    st.divider()
     # Exibição do DataFrame filtrado
     st.dataframe(df_filtrado, use_container_width=True)
