@@ -12,7 +12,10 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - Pega os produtos
 - Realiza o Tratamento
 - Salva em CSV e Parquet os dados brutos e tratados
-
+  
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/3db4877a-0fc8-4724-b9c0-bbc64101d33a" alt="image">
+</div>
 
 ## Funções
 - Login Streamlit
@@ -20,6 +23,10 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - ETL com Spark e Pandas
 - Dash e Painel com Streamlit
 - CSV e Parquet
+  
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/0e683bd5-eee8-46b7-b192-e603f7799797" alt="image">
+</div>
 
  ## Ferramentas
 - Python
@@ -28,8 +35,7 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - Pandas
 - Spark
    
-<div align="center">
-</div>
+
 
 ## Requirements
 - Python 3.12
