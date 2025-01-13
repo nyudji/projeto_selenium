@@ -42,7 +42,7 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - `streamlit` 
 - `pandas`
 - `selenium` 
-- `spark` 
+- `pyspark` 
 
 <div align="center">
 <h1>Utilizando PySpark no Windows 11</h1>
