@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import glob
 import os
-
+import plotly.express as px
 
 def get_latest_file(pattern="promocoes_jaquetas_*.csv"):
     # Obter o caminho absoluto para o diretório 'dados/bruto' relativo ao diretório atual
@@ -105,5 +105,64 @@ def display_dash2():
         st.subheader('Total ofertas')
         st.subheader(f'{contagem_produtos}')
     st.divider()
-    # Exibição do DataFrame filtrado
-    st.dataframe(df_filtrado, use_container_width=True)
+
+    fig_preco_marca = df_filtrado.groupby(by=["Marca"])[["Preço"]].sum().sort_values(by="Preço")
+
+    fig_preco_marca = px.bar(
+        fig_preco_marca,
+        x="Preço",
+        y=fig_preco_marca.index,
+        orientation="h",
+        title="<b>Preços por Marca</b>",
+        color_discrete_sequence=["#F4CED9"] * len(fig_preco_marca),
+        template="plotly_white",
+    )
+
+    fig_preco_marca.update_layout(
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=(dict(showgrid=False))
+    )
+
+
+    # Ordenar o DataFrame com base na contagem de ofertas por marca
+    df_ordenado = df_filtrado.groupby("Marca").size().reset_index(name="Contagem").sort_values(by="Contagem", ascending=False)
+
+    # Criar o gráfico de barras com uma sequência de cores personalizada
+    fig_contagem_marca = px.bar(
+        df_ordenado,
+        x="Marca",
+        y="Contagem",
+        title="Contagem de Ofertas Por Marcas",
+        color_discrete_sequence=["#F4CED9"] * len(df_ordenado)  # Cor personalizada
+    )
+
+    fig_dist_preco = px.box(
+    df_filtrado,
+    x="Marca",
+    y="Preço",
+    color="Marca",
+    title="Distribuição de Preços por Marca",
+    color_discrete_sequence=px.colors.sequential.Plasma  # Paleta de degradê
+    )
+
+    st.plotly_chart(fig_dist_preco, use_container_width=True)
+
+    left_column, right_column = st.columns(2)
+    left_column.plotly_chart(fig_contagem_marca, use_container_width=True)
+    right_column.plotly_chart(fig_preco_marca, use_container_width=True)
+    
+
+
+    st.divider()
+
+    # Estado inicial para exibição da tabela
+    if 'show_table' not in st.session_state:
+        st.session_state.show_table = False
+
+    # Botão para alternar a exibição
+    if st.button("Exibir/Ocultar Tabela"):
+        st.session_state.show_table = not st.session_state.show_table
+
+    # Exibir a tabela se o estado for True
+    if st.session_state.show_table:
+        st.dataframe(df, use_container_width=True)
