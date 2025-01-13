@@ -25,8 +25,9 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - CSV e Parquet
   
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/0e683bd5-eee8-46b7-b192-e603f7799797" alt="image">
+    <img src="https://github.com/user-attachments/assets/372b5a2e-84b3-4521-afa1-9c2b99dd9b71" alt="image">
 </div>
+
 
  ## Ferramentas
 - Python
