@@ -3,7 +3,7 @@
   
 </div>
 <br>
-Sistema analítico, com login, com dashboard de produtos extraidos com Selenium, em Python usando Streamlit e PySpark para o ETL.
+Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e PySpark, salvando ofertas tratadas em csv e parquet, e com painel e dash em Streamlit.
 
 
 ## Scrapping
