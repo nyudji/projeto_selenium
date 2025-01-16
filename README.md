@@ -17,6 +17,19 @@ Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e Py
     <img src="https://github.com/user-attachments/assets/3db4877a-0fc8-4724-b9c0-bbc64101d33a" alt="image">
 </div>
 
+ ## Dados
+- Produto
+- Marca
+- Preço Original
+- Preço com desconto
+
+ ## Dados tratados
+- Desconto
+- % Desconto
+- Categoria Preço
+- Classificação Produto
+- Acima ou abaixo do preço médio
+
 ## Funções
 - Login Streamlit
 - Scraping de produtos
@@ -28,7 +41,6 @@ Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e Py
     <img src="https://github.com/user-attachments/assets/372b5a2e-84b3-4521-afa1-9c2b99dd9b71" alt="image">
 </div>
 
-
  ## Ferramentas
 - Python
 - Selenium
@@ -36,6 +48,9 @@ Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e Py
 - Pandas
 - Spark
    
+## Implementações futuras
+- Integração com Postgre
+- Relatório com IA
 
 
 ## Requirements
