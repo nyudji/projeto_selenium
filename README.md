@@ -25,7 +25,6 @@ Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e Py
 
  ## Dados tratados
 - Desconto
-- % Desconto
 - Categoria Preço
 - Classificação Produto
 - Acima ou abaixo do preço médio
