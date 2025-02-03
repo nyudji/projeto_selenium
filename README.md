@@ -3,8 +3,7 @@
   
 </div>
 <br>
-Projeto Selenium, webscraping de produtos da Farfetch, feito ETL com Pandas e PySpark, salvando ofertas tratadas em csv e parquet, e com painel e dash em Streamlit.
-
+Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em web scraping, tratamento de dados e visualização interativa. Utilizo Selenium para automatizar a extração de ofertas de jaquetas na seção de promoções do site da Farfetch, faço a Extração/Tratamento/Carregamento com PySpark e Pandas.
 
 ## Scrapping
 - Entra no site da Farfetch
