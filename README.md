@@ -3,8 +3,7 @@
   
 </div>
 <br>
-Sistema analítico, com login, com dashboard de produtos extraidos com Selenium, em Python usando Streamlit e PySpark para o ETL.
-
+Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em web scraping, tratamento de dados e visualização interativa. Utilizo Selenium para automatizar a extração de ofertas de jaquetas na seção de promoções do site da Farfetch, faço a Extração/Tratamento/Carregamento com PySpark e Pandas.
 
 ## Scrapping
 - Entra no site da Farfetch
@@ -17,6 +16,19 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
     <img src="https://github.com/user-attachments/assets/3db4877a-0fc8-4724-b9c0-bbc64101d33a" alt="image">
 </div>
 
+ ## Dados
+- Produto
+- Marca
+- Preço Original
+- Preço com desconto
+
+ ## Dados tratados
+- Data e Hora
+- Desconto
+- Categoria Preço
+- Classificação Produto
+- Acima ou abaixo do preço médio
+
 ## Funções
 - Login Streamlit
 - Scraping de produtos
@@ -28,7 +40,6 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
     <img src="https://github.com/user-attachments/assets/372b5a2e-84b3-4521-afa1-9c2b99dd9b71" alt="image">
 </div>
 
-
  ## Ferramentas
 - Python
 - Selenium
@@ -36,6 +47,9 @@ Sistema analítico, com login, com dashboard de produtos extraidos com Selenium,
 - Pandas
 - Spark
    
+## Implementações futuras
+- Integração com Postgre
+- Relatório com IA
 
 
 ## Requirements
