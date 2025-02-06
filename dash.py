@@ -3,6 +3,8 @@ import pandas as pd
 import glob
 import os
 import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def get_latest_file(pattern="promocoes_jaquetas_*.csv"):
     # Obter o caminho absoluto para o diretório 'dados/bruto' relativo ao diretório atual
@@ -55,6 +57,12 @@ def display_dash2():
     # Sidebar para filtros
     st.sidebar.header('Faça o filtro aqui')
 
+    # Filtro: Categoria
+    marcas = st.sidebar.selectbox(
+        "Marca",
+        options=["Todas"] + list(df['Marca'].unique())
+    )
+
     # Filtro: Classificação
     classificacao = st.sidebar.multiselect(
         "Classificação",
@@ -83,11 +91,16 @@ def display_dash2():
 
     if categorias != "Todos":
         df_filtrado = df_filtrado[df_filtrado['Categoria Luxo'] == categorias]
+    
+    if marcas != "Todas":
+        df_filtrado = df_filtrado[df_filtrado['Marca'] == marcas]
 
     df_filtrado = df_filtrado[
         (df_filtrado['Desconto Percentual'] >= desconto[0]) & 
         (df_filtrado['Desconto Percentual'] <= desconto[1])
     ]
+
+    
 
     #Calculando KPI's
     preco_medio = int(df_filtrado['Preço'].mean())
@@ -97,7 +110,7 @@ def display_dash2():
     col1, col2, col3, = st.columns(3)
     with col1:
         st.subheader('Preço médio')
-        st.subheader(f'R$: {preco_medio:,}')
+        st.subheader(f'R$ {preco_medio:,}')
     with col2:
         st.subheader('Desconto médio')
         st.subheader(f'{desconto_medio:,}%')
@@ -106,56 +119,8 @@ def display_dash2():
         st.subheader(f'{contagem_produtos}')
     st.divider()
 
-    fig_preco_marca = df_filtrado.groupby(by=["Marca"])[["Preço"]].sum().sort_values(by="Preço")
-
-    fig_preco_marca = px.bar(
-        fig_preco_marca,
-        x="Preço",
-        y=fig_preco_marca.index,
-        orientation="h",
-        title="<b>Preços por Marca</b>",
-        color_discrete_sequence=["#F4CED9"] * len(fig_preco_marca),
-        template="plotly_white",
-    )
-
-    fig_preco_marca.update_layout(
-        plot_bgcolor="rgba(0,0,0,0)",
-        xaxis=(dict(showgrid=False))
-    )
-
-
-    # Ordenar o DataFrame com base na contagem de ofertas por marca
-    df_ordenado = df_filtrado.groupby("Marca").size().reset_index(name="Contagem").sort_values(by="Contagem", ascending=False)
-
-    # Criar o gráfico de barras com uma sequência de cores personalizada
-    fig_contagem_marca = px.bar(
-        df_ordenado,
-        x="Marca",
-        y="Contagem",
-        title="Contagem de Ofertas Por Marcas",
-        color_discrete_sequence=["#F4CED9"] * len(df_ordenado)  # Cor personalizada
-    )
-
-    fig_dist_preco = px.box(
-    df_filtrado,
-    x="Marca",
-    y="Preço",
-    color="Marca",
-    title="Distribuição de Preços por Marca",
-    color_discrete_sequence=px.colors.sequential.Plasma  # Paleta de degradê
-    )
-
-    st.plotly_chart(fig_dist_preco, use_container_width=True)
-
-    left_column, right_column = st.columns(2)
-    left_column.plotly_chart(fig_contagem_marca, use_container_width=True)
-    right_column.plotly_chart(fig_preco_marca, use_container_width=True)
-    
-
-
-    st.divider()
-
-    # Estado inicial para exibição da tabela
+    #Botao mostrar tabela
+     # Estado inicial para exibição da tabela
     if 'show_table' not in st.session_state:
         st.session_state.show_table = False
 
@@ -165,4 +130,55 @@ def display_dash2():
 
     # Exibir a tabela se o estado for True
     if st.session_state.show_table:
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df_filtrado, use_container_width=True)
+    
+    # Ordenar o DataFrame com base na contagem de ofertas por marca
+    df_ordenado = df_filtrado.groupby("Marca").size().reset_index(name="Contagem").sort_values(by="Contagem", ascending=False)
+    
+    # Criar o gráfico de barras com uma sequência de cores personalizada
+    fig_contagem_marca = px.bar(
+        df_ordenado,
+        x="Marca",
+        y="Contagem",
+        title="Contagem de Ofertas Por Marcas",
+        color_discrete_sequence=["#F4CED9"] * len(df_ordenado)  # Cor personalizada
+    )
+
+    
+    fig_preco_marca = df_filtrado.groupby(by=["Marca"])[["Preço"]].sum().sort_values(by="Preço")
+
+    fig_preco_marca = px.bar(
+        fig_preco_marca,
+        x="Preço",
+        y=fig_preco_marca.index,
+        orientation="h",
+        title="<b>Preços Total por Marca</b>",
+        color_discrete_sequence=["#F4CED9"] * len(fig_preco_marca),
+        template="plotly_white",
+    )
+
+    fig_preco_marca.update_layout(
+        plot_bgcolor="rgba(0,0,0,0)",
+        xaxis=(dict(showgrid=False))
+    )
+    
+    if marcas == "Todas":
+        left_column, right_column = st.columns(2)
+        left_column.plotly_chart(fig_contagem_marca, use_container_width=True)
+        right_column.plotly_chart(fig_preco_marca, use_container_width=True)
+        
+        fig_dist_preco = px.box(
+        df_filtrado,
+        x="Marca",
+        y="Preço",
+        color="Marca",
+        title="Distribuição de Preços por Marca",
+        color_discrete_sequence=px.colors.sequential.Plasma  # Paleta de degradê
+        )
+        st.plotly_chart(fig_dist_preco, use_container_width=True)
+    # Percentual de Produtos por Categoria de Luxo
+    fig_prod_cat = px.pie(df_filtrado, names="Categoria Luxo", title="Produtos por Categoria", hole=0.4)
+    st.plotly_chart(fig_prod_cat)
+    st.divider()
+
+   
