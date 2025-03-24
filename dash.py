@@ -119,6 +119,34 @@ def display_dash2():
         st.subheader(f'{contagem_produtos}')
     st.divider()
 
+
+    def plot_top10_descontos(df):
+        """Cria um gráfico de barras dos produtos com maior desconto, com fundo transparente."""
+        fig, ax = plt.subplots(figsize=(8, 5))
+
+        # Criar o gráfico de barras
+        sns.barplot(
+            data=df, 
+            y="Produto", 
+            x="Desconto Real", 
+            ax=ax, 
+            palette="Reds_r"
+        )
+
+        # Configurar fundo transparente
+        fig.patch.set_alpha(0)  # Fundo da figura transparente
+        ax.set_facecolor("none")  # Fundo do gráfico transparente
+
+        # Ajustar rótulos e título
+        ax.set_xlabel("Desconto em R$", color="white")
+        ax.set_ylabel("Produto", color="white")
+        ax.set_title("Produtos com maiores descontos", color="white")
+
+        # Ajustar cores dos ticks (valores nos eixos)
+        ax.tick_params(colors="white")
+
+        return fig
+    
     #Botao mostrar tabela
      # Estado inicial para exibição da tabela
     if 'show_table' not in st.session_state:
@@ -128,9 +156,60 @@ def display_dash2():
     if st.button("Exibir/Ocultar Tabela"):
         st.session_state.show_table = not st.session_state.show_table
 
+    def plot_tipo_desconto(df):
+        """Cria um gráfico de boxplot com fundo transparente."""
+        fig, ax = plt.subplots(figsize=(8, 5))
+
+        # Criar o boxplot
+        sns.boxplot(
+            data=df, 
+            x="Classificação", 
+            y="Desconto Percentual", 
+            ax=ax, 
+            palette="coolwarm"
+        )
+
+        # Configurar fundo transparente
+        fig.patch.set_alpha(0)  # Fundo da figura transparente
+        ax.set_facecolor("none")  # Fundo do gráfico transparente
+
+        # Ajustar cores dos rótulos e título
+        ax.set_xlabel("Tipo", color="white")
+        ax.set_ylabel("Desconto (%)", color="white")
+        ax.set_title("Distribuição de Descontos por tipo do produto", color="white", fontsize=25)
+
+        # Ajustar cores dos ticks (valores nos eixos)
+        ax.tick_params(colors="white")
+
+        return fig
+    
     # Exibir a tabela se o estado for True
     if st.session_state.show_table:
         st.dataframe(df_filtrado, use_container_width=True)
+    
+    # Adicionar um divisor abaixo
+    st.divider()
+
+
+    #Mostrar produtos com maiores descontos
+    # Calcular o desconto real
+    df_filtrado["Desconto Real"] = df_filtrado["Preço Original"] - df_filtrado["Preço"]
+    top10_descontos = df_filtrado.nlargest(50, "Desconto Real")
+
+    #Exibe os produtos com maiores desconto
+    st.pyplot(plot_top10_descontos(top10_descontos))
+    st.divider()
+
+    # Criar colunas para exibir os gráficos lado a lado
+    col4, col5 = st.columns(2)
+
+    # Grafico esquerda , produtos por categoria
+    with col4:
+        fig_prod_cat = px.pie(df_filtrado, names="Categoria Luxo", title="Produtos por Categoria", hole=0.4)
+        st.plotly_chart(fig_prod_cat)
+    # Gráfico da direita, Tipo x Desconto
+    with col5:
+        st.pyplot(plot_tipo_desconto(df_filtrado))
     
     # Ordenar o DataFrame com base na contagem de ofertas por marca
     df_ordenado = df_filtrado.groupby("Marca").size().reset_index(name="Contagem").sort_values(by="Contagem", ascending=False)
@@ -144,7 +223,6 @@ def display_dash2():
         color_discrete_sequence=["#F4CED9"] * len(df_ordenado)  # Cor personalizada
     )
 
-    
     fig_preco_marca = df_filtrado.groupby(by=["Marca"])[["Preço"]].sum().sort_values(by="Preço")
 
     fig_preco_marca = px.bar(
@@ -176,9 +254,9 @@ def display_dash2():
         color_discrete_sequence=px.colors.sequential.Plasma  # Paleta de degradê
         )
         st.plotly_chart(fig_dist_preco, use_container_width=True)
-    # Percentual de Produtos por Categoria de Luxo
-    fig_prod_cat = px.pie(df_filtrado, names="Categoria Luxo", title="Produtos por Categoria", hole=0.4)
-    st.plotly_chart(fig_prod_cat)
+
+    
     st.divider()
 
-   
+
+    
