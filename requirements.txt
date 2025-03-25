@@ -2,7 +2,9 @@ numpy>=1.21.0
 pandas>=1.3.0
 streamlit==1.25.0
 selenium==4.10.0
-pyyaml==6.0
-webdriver-manager==4.8.0
+pyyaml
+webdriver-manager==4.0.2
 pyspark>=3.4.0
 pyarrow
+psycopg2-binary
+requests

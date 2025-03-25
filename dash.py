@@ -5,6 +5,7 @@ import os
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.colors as pc
 
 def get_latest_file(pattern="promocoes_jaquetas_*.csv"):
     # Obter o caminho absoluto para o diretório 'dados/bruto' relativo ao diretório atual
@@ -176,7 +177,7 @@ def display_dash2():
         # Ajustar cores dos rótulos e título
         ax.set_xlabel("Tipo", color="white")
         ax.set_ylabel("Desconto (%)", color="white")
-        ax.set_title("Distribuição de Descontos por tipo do produto", color="white", fontsize=25)
+        ax.set_title("Descontos (%) por Tipo do produto", color="white", fontsize=25)
 
         # Ajustar cores dos ticks (valores nos eixos)
         ax.tick_params(colors="white")
@@ -205,7 +206,7 @@ def display_dash2():
 
     # Grafico esquerda , produtos por categoria
     with col4:
-        fig_prod_cat = px.pie(df_filtrado, names="Categoria Luxo", title="Produtos por Categoria", hole=0.4)
+        fig_prod_cat = px.pie(df_filtrado, names="Categoria Luxo", title="Produtos por Categoria", hole=0.4, color_discrete_sequence=pc.qualitative.Pastel1)
         st.plotly_chart(fig_prod_cat)
     # Gráfico da direita, Tipo x Desconto
     with col5:

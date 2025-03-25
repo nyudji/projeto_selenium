@@ -1,0 +1,7 @@
+numpy>=1.21.0
+pandas>=1.3.0
+selenium==4.10.0
+webdriver-manager==4.0.2
+psycopg2-binary
+requests
+pendulum==1.4.2

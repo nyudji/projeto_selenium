@@ -1,0 +1,9 @@
+@echo Iniciando o Airflow...
+docker-compose up -d
+
+@echo Inicializando o banco de dados...
+docker-compose run --rm airflow-webserver airflow db init
+
+@echo Criando usuário Admin...
+docker-compose run airflow-worker airflow users create --role Admin --username admin --email admin@admin.com --firstname admin --lastname admin --password admin
+
