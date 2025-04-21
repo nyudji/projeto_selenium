@@ -879,3 +879,31 @@ SyntaxError: ':' expected after dictionary key
 [2025-04-21T14:15:19.030+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:15:19.029+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-21T14:15:19.045+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:15:19.045+0000] {dag.py:4180} INFO - Setting next_dagrun for scraping_farfetch_mensal to 2025-04-01 10:00:00+00:00, run_after=2025-05-01 10:00:00+00:00
 [2025-04-21T14:15:19.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_scraping.py took 0.539 seconds
+[2025-04-21T14:15:49.162+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:15:49.163+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_scraping.py for tasks to queue
+[2025-04-21T14:15:49.164+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:15:49.164+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:15:49.588+0000] {processor.py:925} INFO - DAG(s) 'scraping_farfetch_mensal' retrieved from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:15:49.607+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:15:49.606+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-21T14:15:49.624+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:15:49.624+0000] {dag.py:4180} INFO - Setting next_dagrun for scraping_farfetch_mensal to 2025-04-01 10:00:00+00:00, run_after=2025-05-01 10:00:00+00:00
+[2025-04-21T14:15:49.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_scraping.py took 0.480 seconds
+[2025-04-21T14:16:20.206+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:20.207+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_scraping.py for tasks to queue
+[2025-04-21T14:16:20.209+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:20.209+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:20.654+0000] {processor.py:925} INFO - DAG(s) 'scraping_farfetch_mensal' retrieved from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:20.671+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:20.671+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-21T14:16:20.690+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:20.690+0000] {dag.py:4180} INFO - Setting next_dagrun for scraping_farfetch_mensal to 2025-04-01 10:00:00+00:00, run_after=2025-05-01 10:00:00+00:00
+[2025-04-21T14:16:20.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_scraping.py took 0.506 seconds
+[2025-04-21T14:16:51.479+0000] {processor.py:186} INFO - Started process (PID=151) to work on /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:51.480+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_scraping.py for tasks to queue
+[2025-04-21T14:16:51.481+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:51.481+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:51.931+0000] {processor.py:925} INFO - DAG(s) 'scraping_farfetch_mensal' retrieved from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:16:51.948+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:51.948+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-21T14:16:51.965+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:16:51.965+0000] {dag.py:4180} INFO - Setting next_dagrun for scraping_farfetch_mensal to 2025-04-01 10:00:00+00:00, run_after=2025-05-01 10:00:00+00:00
+[2025-04-21T14:16:51.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_scraping.py took 0.512 seconds
+[2025-04-21T14:17:22.124+0000] {processor.py:186} INFO - Started process (PID=153) to work on /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:17:22.125+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_scraping.py for tasks to queue
+[2025-04-21T14:17:22.127+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:17:22.126+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:17:22.581+0000] {processor.py:925} INFO - DAG(s) 'scraping_farfetch_mensal' retrieved from /opt/airflow/dags/dag_scraping.py
+[2025-04-21T14:17:22.603+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:17:22.602+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-21T14:17:22.623+0000] {logging_mixin.py:190} INFO - [2025-04-21T14:17:22.623+0000] {dag.py:4180} INFO - Setting next_dagrun for scraping_farfetch_mensal to 2025-04-01 10:00:00+00:00, run_after=2025-05-01 10:00:00+00:00
+[2025-04-21T14:17:22.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_scraping.py took 0.520 seconds

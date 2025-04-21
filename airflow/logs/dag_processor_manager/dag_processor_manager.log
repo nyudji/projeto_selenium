@@ -1475,3 +1475,39 @@ File Path                          PID    Runtime      # DAGs    # Errors  Last 
 ================================================================================
 [2025-04-21T14:15:07.443+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
 [2025-04-21T14:15:07.458+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-04-21T14:15:28.034+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/dag_scraping.py                           1           0  0.56s           2025-04-21T14:15:19                      12
+================================================================================
+[2025-04-21T14:15:59.257+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/dag_scraping.py                           1           0  0.50s           2025-04-21T14:15:49                      12
+================================================================================
+[2025-04-21T14:16:07.737+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-04-21T14:16:07.755+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
+[2025-04-21T14:16:30.698+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/dag_scraping.py                           1           0  0.53s           2025-04-21T14:16:20                      12
+================================================================================
+[2025-04-21T14:17:01.542+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/dag_scraping.py                           1           0  0.54s           2025-04-21T14:16:51                      12
+================================================================================
+[2025-04-21T14:17:08.075+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-04-21T14:17:08.365+0000] {manager.py:824} INFO - There are 1 files in /opt/airflow/dags
