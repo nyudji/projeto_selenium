@@ -1,0 +1,9 @@
+logs/
+__pycache__
+*.pyc
+.git
+.vscode
+logs
+.env
+*.log
+airflow/logs/

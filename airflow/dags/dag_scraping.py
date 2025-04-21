@@ -1,30 +1,37 @@
-import sys
-import os
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime
+from datetime import datetime, timedelta
+import sys
+import os
 
+# Garante que o Airflow ache o scrapping.py na raiz montada
+sys.path.append("/opt/airflow")
 
-# Adiciona a pasta /opt/airflow/scrapping ao sys.path
-sys.path.insert(0, '/opt/airflow/scrapping')
+from scrapping import run_scraping
 
-# Importação dentro da função para evitar erros de carregamento do DAG
-def run_scraping_task():
-    from scrapping import run_scraping  # Importação do módulo 'scrapping'
-    run_scraping()
+# Argumentos padrão da DAG
+default_args = {
+    "owner": "nicolas",
+    "depends_on_past": False,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=10),
+}
 
-# Definição do DAG
+# Define a DAG para rodar todo dia 1 às 3 da manhã
 with DAG(
-    dag_id='scraping_dag',
-    description='Um DAG para rodar o scraping',
-    schedule_interval='@daily',  # Corrigido para `schedule_interval`
-    start_date=datetime(2025, 3, 24),
-    catchup=False,
-    tags=['scraping'],  # Adicionado uma tag para facilitar organização no Airflow UI
+    dag_id="scraping_farfetch_mensal",
+    default_args=default_args,
+    description="Executa o scraping da Farfetch uma vez por mês",
+    schedule_interval="0 10 1 * *",  # todo dia 1 do mês às 10:00
+    start_date=datetime(2024, 4, 1),
+    catchup=False,             
+    max_active_runs=1,
+    tags=["scraping", "selenium", "mensal"],
 ) as dag:
 
-    # Criando a tarefa PythonOperator para rodar o scraping
-    run_scraping_operator = PythonOperator(
-        task_id='run_scraping',
-        python_callable=run_scraping_task,  # Chama a função que executa o scraping
+    tarefa_scraping = PythonOperator(
+        task_id="executar_scraping_farfetch",
+        python_callable=run_scraping
     )
+
+    tarefa_scraping

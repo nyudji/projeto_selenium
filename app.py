@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
-from scrapping import run_scraping  # Função do scraper
+from scrapping_local import run_scraping  # Função do scraper
 from dash import display_dashboard, display_dash2  # Função para mostrar o dashboard
 import threading
 import time

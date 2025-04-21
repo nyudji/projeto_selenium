@@ -1,0 +1,345 @@
+[2025-04-21T14:05:07.692+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-21T14:05:07.714+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-21T13:49:50.948276+00:00 [queued]>
+[2025-04-21T14:05:07.722+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-21T13:49:50.948276+00:00 [queued]>
+[2025-04-21T14:05:07.723+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-21T14:05:07.738+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): executar_scraping_farfetch> on 2025-04-21 13:49:50.948276+00:00
+[2025-04-21T14:05:07.745+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2578) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-21T14:05:07.746+0000] {standard_task_runner.py:72} INFO - Started process 2580 to run task
+[2025-04-21T14:05:07.750+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scraping_farfetch_mensal', 'executar_scraping_farfetch', 'manual__2025-04-21T13:49:50.948276+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag_scraping.py', '--cfg-path', '/tmp/tmpct2_18is']
+[2025-04-21T14:05:07.761+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask executar_scraping_farfetch
+[2025-04-21T14:05:07.872+0000] {task_command.py:467} INFO - Running <TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-21T13:49:50.948276+00:00 [running]> on host 32047fb085ea
+[2025-04-21T14:05:08.010+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='nicolas' AIRFLOW_CTX_DAG_ID='scraping_farfetch_mensal' AIRFLOW_CTX_TASK_ID='executar_scraping_farfetch' AIRFLOW_CTX_EXECUTION_DATE='2025-04-21T13:49:50.948276+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-21T13:49:50.948276+00:00'
+[2025-04-21T14:05:08.013+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-21T14:05:14.933+0000] {scrapping.py:35} INFO - Acessando o link: https://www.farfetch.com/br/shopping/men/items.aspx
+[2025-04-21T14:05:21.419+0000] {scrapping.py:54} INFO - Clicou no menu de Jaquetas via JavaScript
+[2025-04-21T14:05:30.570+0000] {scrapping.py:76} INFO - Total de produtos: 96
+[2025-04-21T14:05:30.618+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com patch
+[2025-04-21T14:05:30.624+0000] {logging_mixin.py:190} INFO - BARROW
+[2025-04-21T14:05:31.625+0000] {scrapping.py:92} INFO - Produto 0 processado
+[2025-04-21T14:05:31.669+0000] {logging_mixin.py:190} INFO - Jaqueta de couro
+[2025-04-21T14:05:31.676+0000] {logging_mixin.py:190} INFO - Salvatore Santoro
+[2025-04-21T14:05:32.677+0000] {scrapping.py:92} INFO - Produto 1 processado
+[2025-04-21T14:05:32.714+0000] {logging_mixin.py:190} INFO - Jaqueta bomber V-Emblem de couro
+[2025-04-21T14:05:32.723+0000] {logging_mixin.py:190} INFO - Versace Jeans Couture
+[2025-04-21T14:05:33.723+0000] {scrapping.py:92} INFO - Produto 2 processado
+[2025-04-21T14:05:33.755+0000] {logging_mixin.py:190} INFO - Jaqueta Retro Denali
+[2025-04-21T14:05:33.762+0000] {logging_mixin.py:190} INFO - The North Face
+[2025-04-21T14:05:34.762+0000] {scrapping.py:92} INFO - Produto 3 processado
+[2025-04-21T14:05:34.794+0000] {logging_mixin.py:190} INFO - Jaqueta bomber de couro
+[2025-04-21T14:05:34.800+0000] {logging_mixin.py:190} INFO - Dell'oglio
+[2025-04-21T14:05:35.800+0000] {scrapping.py:92} INFO - Produto 4 processado
+[2025-04-21T14:05:35.834+0000] {logging_mixin.py:190} INFO - Jaqueta Polo Pony de algodão
+[2025-04-21T14:05:35.840+0000] {logging_mixin.py:190} INFO - Polo Ralph Lauren
+[2025-04-21T14:05:36.841+0000] {scrapping.py:92} INFO - Produto 5 processado
+[2025-04-21T14:05:36.876+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com zíper
+[2025-04-21T14:05:36.883+0000] {logging_mixin.py:190} INFO - Burberry
+[2025-04-21T14:05:37.884+0000] {scrapping.py:92} INFO - Produto 6 processado
+[2025-04-21T14:05:37.918+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com capuz
+[2025-04-21T14:05:37.925+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld Jeans
+[2025-04-21T14:05:38.925+0000] {scrapping.py:92} INFO - Produto 7 processado
+[2025-04-21T14:05:38.955+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê Himalayan com capuz
+[2025-04-21T14:05:38.961+0000] {logging_mixin.py:190} INFO - The North Face
+[2025-04-21T14:05:39.962+0000] {scrapping.py:92} INFO - Produto 8 processado
+[2025-04-21T14:05:39.992+0000] {logging_mixin.py:190} INFO - Jaqueta college Mascot
+[2025-04-21T14:05:39.997+0000] {logging_mixin.py:190} INFO - Represent
+[2025-04-21T14:05:40.998+0000] {scrapping.py:92} INFO - Produto 9 processado
+[2025-04-21T14:05:41.040+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com detalhe de aplicação
+[2025-04-21T14:05:41.074+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld
+[2025-04-21T14:05:42.075+0000] {scrapping.py:92} INFO - Produto 10 processado
+[2025-04-21T14:05:42.114+0000] {logging_mixin.py:190} INFO - Jaqueta college com bordado
+[2025-04-21T14:05:42.121+0000] {logging_mixin.py:190} INFO - BARROW
+[2025-04-21T14:05:43.121+0000] {scrapping.py:92} INFO - Produto 11 processado
+[2025-04-21T14:05:43.165+0000] {logging_mixin.py:190} INFO - Blazer com abotoamento simples
+[2025-04-21T14:05:43.172+0000] {logging_mixin.py:190} INFO - Dolce & Gabbana
+[2025-04-21T14:05:44.173+0000] {scrapping.py:92} INFO - Produto 12 processado
+[2025-04-21T14:05:44.203+0000] {logging_mixin.py:190} INFO - Blazer com abotoamento simples
+[2025-04-21T14:05:44.209+0000] {logging_mixin.py:190} INFO - Herno
+[2025-04-21T14:05:45.361+0000] {scrapping.py:92} INFO - Produto 13 processado
+[2025-04-21T14:05:45.991+0000] {logging_mixin.py:190} INFO - Jaqueta com capuz e patch de bússola
+[2025-04-21T14:05:45.997+0000] {logging_mixin.py:190} INFO - Stone Island
+[2025-04-21T14:05:46.997+0000] {scrapping.py:92} INFO - Produto 14 processado
+[2025-04-21T14:05:47.026+0000] {logging_mixin.py:190} INFO - Blazer Sicilia com abotoamento duplo
+[2025-04-21T14:05:47.031+0000] {logging_mixin.py:190} INFO - Dolce & Gabbana
+[2025-04-21T14:05:48.031+0000] {scrapping.py:92} INFO - Produto 15 processado
+[2025-04-21T14:05:48.058+0000] {logging_mixin.py:190} INFO - Jaqueta com padronagem monogramada PB
+[2025-04-21T14:05:48.063+0000] {logging_mixin.py:190} INFO - Balmain
+[2025-04-21T14:05:49.064+0000] {scrapping.py:92} INFO - Produto 16 processado
+[2025-04-21T14:05:49.095+0000] {logging_mixin.py:190} INFO - Blazer Punto com botões
+[2025-04-21T14:05:49.100+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld
+[2025-04-21T14:05:50.100+0000] {scrapping.py:92} INFO - Produto 17 processado
+[2025-04-21T14:05:50.130+0000] {logging_mixin.py:190} INFO - Jaqueta x Ronaldinho color block
+[2025-04-21T14:05:50.144+0000] {logging_mixin.py:190} INFO - KidSuper
+[2025-04-21T14:05:51.151+0000] {scrapping.py:92} INFO - Produto 18 processado
+[2025-04-21T14:05:51.178+0000] {logging_mixin.py:190} INFO - Blazer com abotoamento duplo
+[2025-04-21T14:05:51.183+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld
+[2025-04-21T14:05:52.184+0000] {scrapping.py:92} INFO - Produto 19 processado
+[2025-04-21T14:05:52.405+0000] {logging_mixin.py:190} INFO - Jaqueta bomber de couro
+[2025-04-21T14:05:52.563+0000] {logging_mixin.py:190} INFO - Dolce & Gabbana
+[2025-04-21T14:02:40.180+0000] {scrapping.py:92} INFO - Produto 20 processado
+[2025-04-21T14:02:40.210+0000] {logging_mixin.py:190} INFO - Jaqueta esportiva color block
+[2025-04-21T14:02:40.216+0000] {logging_mixin.py:190} INFO - Moschino
+[2025-04-21T14:05:55.535+0000] {scrapping.py:92} INFO - Produto 21 processado
+[2025-04-21T14:05:55.566+0000] {logging_mixin.py:190} INFO - Jaqueta corta-vento com logo
+[2025-04-21T14:05:55.572+0000] {logging_mixin.py:190} INFO - Ea7 Emporio Armani
+[2025-04-21T14:05:56.315+0000] {job.py:229} INFO - Heartbeat recovered after 11.67 seconds
+[2025-04-21T14:05:56.728+0000] {scrapping.py:92} INFO - Produto 22 processado
+[2025-04-21T14:05:56.758+0000] {logging_mixin.py:190} INFO - Jaqueta com capuz
+[2025-04-21T14:05:56.764+0000] {logging_mixin.py:190} INFO - Stone Island
+[2025-04-21T14:05:57.764+0000] {scrapping.py:92} INFO - Produto 23 processado
+[2025-04-21T14:05:57.798+0000] {logging_mixin.py:190} INFO - Jaqueta bomber de couro
+[2025-04-21T14:05:57.804+0000] {logging_mixin.py:190} INFO - DSQUARED2
+[2025-04-21T14:05:58.804+0000] {scrapping.py:92} INFO - Produto 24 processado
+[2025-04-21T14:05:58.834+0000] {logging_mixin.py:190} INFO - Jaqueta com padronagem de leopardo
+[2025-04-21T14:05:58.840+0000] {logging_mixin.py:190} INFO - Versace
+[2025-04-21T14:05:59.841+0000] {scrapping.py:92} INFO - Produto 25 processado
+[2025-04-21T14:05:59.875+0000] {logging_mixin.py:190} INFO - Jaqueta Ami De Coeur de lã virgem
+[2025-04-21T14:05:59.883+0000] {logging_mixin.py:190} INFO - AMI Paris
+[2025-04-21T14:06:00.883+0000] {scrapping.py:92} INFO - Produto 26 processado
+[2025-04-21T14:06:00.913+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com patchwork
+[2025-04-21T14:06:00.919+0000] {logging_mixin.py:190} INFO - Casablanca
+[2025-04-21T14:06:01.920+0000] {scrapping.py:92} INFO - Produto 27 processado
+[2025-04-21T14:06:01.952+0000] {logging_mixin.py:190} INFO - Jaqueta jeans com estampa Tokyo
+[2025-04-21T14:06:01.958+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld Jeans
+[2025-04-21T14:06:02.959+0000] {scrapping.py:92} INFO - Produto 28 processado
+[2025-04-21T14:06:02.989+0000] {logging_mixin.py:190} INFO - Jaqueta esportiva Varsity
+[2025-04-21T14:06:02.995+0000] {logging_mixin.py:190} INFO - Casablanca
+[2025-04-21T14:06:03.995+0000] {scrapping.py:92} INFO - Produto 29 processado
+[2025-04-21T14:06:04.025+0000] {logging_mixin.py:190} INFO - Jaqueta Core Identity
+[2025-04-21T14:06:04.031+0000] {logging_mixin.py:190} INFO - Ea7 Emporio Armani
+[2025-04-21T14:06:05.031+0000] {scrapping.py:92} INFO - Produto 30 processado
+[2025-04-21T14:06:05.061+0000] {logging_mixin.py:190} INFO - Jaqueta com zíper e estampa barroca
+[2025-04-21T14:06:05.067+0000] {logging_mixin.py:190} INFO - Versace
+[2025-04-21T14:06:06.067+0000] {scrapping.py:92} INFO - Produto 31 processado
+[2025-04-21T14:06:06.108+0000] {logging_mixin.py:190} INFO - Jaqueta de tricô com recorte matelassê
+[2025-04-21T14:06:06.114+0000] {logging_mixin.py:190} INFO - Paul & Shark
+[2025-04-21T14:06:07.115+0000] {scrapping.py:92} INFO - Produto 32 processado
+[2025-04-21T14:06:07.145+0000] {logging_mixin.py:190} INFO - Blazer com abotoamento duplo
+[2025-04-21T14:06:07.151+0000] {logging_mixin.py:190} INFO - Versace
+[2025-04-21T14:06:08.151+0000] {scrapping.py:92} INFO - Produto 33 processado
+[2025-04-21T14:06:08.187+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com bordado de texto
+[2025-04-21T14:06:08.196+0000] {logging_mixin.py:190} INFO - Balmain
+[2025-04-21T14:06:09.197+0000] {scrapping.py:92} INFO - Produto 34 processado
+[2025-04-21T14:06:09.227+0000] {logging_mixin.py:190} INFO - Jaqueta esportiva com bordado monogramado
+[2025-04-21T14:06:09.233+0000] {logging_mixin.py:190} INFO - Palm Angels
+[2025-04-21T14:06:10.234+0000] {scrapping.py:92} INFO - Produto 35 processado
+[2025-04-21T14:06:10.269+0000] {logging_mixin.py:190} INFO - Colete matelassê com abotoamento duplo
+[2025-04-21T14:06:10.275+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld
+[2025-04-21T14:06:11.276+0000] {scrapping.py:92} INFO - Produto 36 processado
+[2025-04-21T14:06:11.306+0000] {logging_mixin.py:190} INFO - Jaqueta college Ivy
+[2025-04-21T14:06:11.312+0000] {logging_mixin.py:190} INFO - Axel Arigato
+[2025-04-21T14:06:12.313+0000] {scrapping.py:92} INFO - Produto 37 processado
+[2025-04-21T14:06:12.355+0000] {logging_mixin.py:190} INFO - Jaqueta com patch de logo
+[2025-04-21T14:06:12.364+0000] {logging_mixin.py:190} INFO - Napapijri
+[2025-04-21T14:06:13.365+0000] {scrapping.py:92} INFO - Produto 38 processado
+[2025-04-21T14:06:13.403+0000] {logging_mixin.py:190} INFO - Jaqueta McMurdo 2L GTX
+[2025-04-21T14:06:13.410+0000] {logging_mixin.py:190} INFO - The North Face
+[2025-04-21T14:06:14.410+0000] {scrapping.py:92} INFO - Produto 39 processado
+[2025-04-21T14:06:14.445+0000] {logging_mixin.py:190} INFO - Jaqueta flanelada com bolsos
+[2025-04-21T14:06:14.451+0000] {logging_mixin.py:190} INFO - Stone Island
+[2025-04-21T14:06:15.452+0000] {scrapping.py:92} INFO - Produto 40 processado
+[2025-04-21T14:06:15.482+0000] {logging_mixin.py:190} INFO - Jaqueta jeans matelassê
+[2025-04-21T14:06:15.488+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld Jeans
+[2025-04-21T14:06:16.488+0000] {scrapping.py:92} INFO - Produto 41 processado
+[2025-04-21T14:06:16.519+0000] {logging_mixin.py:190} INFO - Jaqueta com pelos na gola
+[2025-04-21T14:06:16.525+0000] {logging_mixin.py:190} INFO - ERALDO
+[2025-04-21T14:06:17.525+0000] {scrapping.py:92} INFO - Produto 42 processado
+[2025-04-21T14:06:17.552+0000] {logging_mixin.py:190} INFO - Jaqueta esportiva com listras triplas
+[2025-04-21T14:06:17.557+0000] {logging_mixin.py:190} INFO - adidas
+[2025-04-21T14:06:18.558+0000] {scrapping.py:92} INFO - Produto 43 processado
+[2025-04-21T14:06:18.590+0000] {logging_mixin.py:190} INFO - Jaqueta corta-vento com logo bordado
+[2025-04-21T14:06:18.595+0000] {logging_mixin.py:190} INFO - Fred Perry
+[2025-04-21T14:06:19.595+0000] {scrapping.py:92} INFO - Produto 44 processado
+[2025-04-21T14:06:19.913+0000] {logging_mixin.py:190} INFO - Jaqueta Ispa Butterfly
+[2025-04-21T14:06:19.919+0000] {logging_mixin.py:190} INFO - Nike
+[2025-04-21T14:06:20.919+0000] {scrapping.py:92} INFO - Produto 45 processado
+[2025-04-21T14:06:21.476+0000] {logging_mixin.py:190} INFO - Colete Ultra Light matelassê
+[2025-04-21T14:06:21.482+0000] {logging_mixin.py:190} INFO - DSQUARED2
+[2025-04-21T14:06:22.482+0000] {scrapping.py:92} INFO - Produto 46 processado
+[2025-04-21T14:06:22.986+0000] {logging_mixin.py:190} INFO - Jaqueta jeans efeito destroyed
+[2025-04-21T14:06:22.992+0000] {logging_mixin.py:190} INFO - DSQUARED2
+[2025-04-21T14:06:23.992+0000] {scrapping.py:92} INFO - Produto 47 processado
+[2025-04-21T14:06:24.020+0000] {logging_mixin.py:190} INFO - Jaqueta Essential de bouclê
+[2025-04-21T14:06:24.025+0000] {logging_mixin.py:190} INFO - Karl Lagerfeld
+[2025-04-21T14:03:11.248+0000] {scrapping.py:92} INFO - Produto 48 processado
+[2025-04-21T14:03:11.274+0000] {logging_mixin.py:190} INFO - Jaqueta jeans com capuz
+[2025-04-21T14:03:11.279+0000] {logging_mixin.py:190} INFO - DSQUARED2
+[2025-04-21T14:06:26.788+0000] {scrapping.py:92} INFO - Produto 49 processado
+[2025-04-21T14:06:26.821+0000] {logging_mixin.py:190} INFO - Jaqueta de couro dupla face
+[2025-04-21T14:06:26.827+0000] {logging_mixin.py:190} INFO - ROUGH.
+[2025-04-21T14:06:27.827+0000] {scrapping.py:92} INFO - Produto 50 processado
+[2025-04-21T14:06:27.864+0000] {logging_mixin.py:190} INFO - Jaqueta biker de couro com zíper
+[2025-04-21T14:06:27.872+0000] {logging_mixin.py:190} INFO - Alexander McQueen
+[2025-04-21T14:06:28.872+0000] {scrapping.py:92} INFO - Produto 51 processado
+[2025-04-21T14:06:28.910+0000] {logging_mixin.py:190} INFO - Blazer xadrez com abotoamento
+[2025-04-21T14:06:28.918+0000] {logging_mixin.py:190} INFO - Lardini
+[2025-04-21T14:06:29.919+0000] {scrapping.py:92} INFO - Produto 52 processado
+[2025-04-21T14:06:29.952+0000] {logging_mixin.py:190} INFO - Jaqueta jeans com zíper
+[2025-04-21T14:06:29.959+0000] {logging_mixin.py:190} INFO - Off-White
+[2025-04-21T14:06:30.959+0000] {scrapping.py:92} INFO - Produto 53 processado
+[2025-04-21T14:06:30.991+0000] {logging_mixin.py:190} INFO - Jaqueta de lã com estampa xadrez
+[2025-04-21T14:06:30.998+0000] {logging_mixin.py:190} INFO - DSQUARED2
+[2025-04-21T14:06:31.998+0000] {scrapping.py:92} INFO - Produto 54 processado
+[2025-04-21T14:06:32.033+0000] {logging_mixin.py:190} INFO - Jaqueta com logo gravado
+[2025-04-21T14:06:32.039+0000] {logging_mixin.py:190} INFO - Emporio Armani
+[2025-04-21T14:06:33.040+0000] {scrapping.py:92} INFO - Produto 55 processado
+[2025-04-21T14:06:33.071+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com logo bordado
+[2025-04-21T14:06:33.077+0000] {logging_mixin.py:190} INFO - Moschino
+[2025-04-21T14:06:34.077+0000] {scrapping.py:92} INFO - Produto 56 processado
+[2025-04-21T14:06:34.108+0000] {logging_mixin.py:190} INFO - Jaqueta bomber Ami De Coeur
+[2025-04-21T14:06:34.115+0000] {logging_mixin.py:190} INFO - AMI Paris
+[2025-04-21T14:06:35.115+0000] {scrapping.py:92} INFO - Produto 57 processado
+[2025-04-21T14:06:35.147+0000] {logging_mixin.py:190} INFO - Jaqueta Retro Nuptse 1996
+[2025-04-21T14:06:35.153+0000] {logging_mixin.py:190} INFO - The North Face
+[2025-04-21T14:06:36.154+0000] {scrapping.py:92} INFO - Produto 58 processado
+[2025-04-21T14:06:36.189+0000] {logging_mixin.py:190} INFO - Blazer com capuz removível
+[2025-04-21T14:06:36.195+0000] {logging_mixin.py:190} INFO - ETRO
+[2025-04-21T14:06:37.196+0000] {scrapping.py:92} INFO - Produto 59 processado
+[2025-04-21T14:06:37.225+0000] {logging_mixin.py:190} INFO - Jaqueta de couro com pelos na gola
+[2025-04-21T14:06:37.231+0000] {logging_mixin.py:190} INFO - Salvatore Santoro
+[2025-04-21T14:06:38.232+0000] {scrapping.py:92} INFO - Produto 60 processado
+[2025-04-21T14:06:38.261+0000] {logging_mixin.py:190} INFO - Jaqueta de couro com zíper
+[2025-04-21T14:06:38.267+0000] {logging_mixin.py:190} INFO - FURSAC
+[2025-04-21T14:06:39.267+0000] {scrapping.py:92} INFO - Produto 61 processado
+[2025-04-21T14:06:39.298+0000] {logging_mixin.py:190} INFO - Jaqueta de couro com zíper
+[2025-04-21T14:06:39.303+0000] {logging_mixin.py:190} INFO - Bally
+[2025-04-21T14:06:40.304+0000] {scrapping.py:92} INFO - Produto 62 processado
+[2025-04-21T14:06:40.337+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com logo
+[2025-04-21T14:06:40.344+0000] {logging_mixin.py:190} INFO - Off-White
+[2025-04-21T14:06:41.344+0000] {scrapping.py:92} INFO - Produto 63 processado
+[2025-04-21T14:06:41.375+0000] {logging_mixin.py:190} INFO - Camisa Same Old Chic
+[2025-04-21T14:06:41.381+0000] {logging_mixin.py:190} INFO - Moschino
+[2025-04-21T14:06:42.382+0000] {scrapping.py:92} INFO - Produto 64 processado
+[2025-04-21T14:06:42.412+0000] {logging_mixin.py:190} INFO - Jaqueta encerada
+[2025-04-21T14:06:42.419+0000] {logging_mixin.py:190} INFO - DUNST
+[2025-04-21T14:06:43.419+0000] {scrapping.py:92} INFO - Produto 65 processado
+[2025-04-21T14:06:43.449+0000] {logging_mixin.py:190} INFO - Jaqueta college com logo
+[2025-04-21T14:06:43.455+0000] {logging_mixin.py:190} INFO - BARROW
+[2025-04-21T14:06:44.456+0000] {scrapping.py:92} INFO - Produto 66 processado
+[2025-04-21T14:06:44.486+0000] {logging_mixin.py:190} INFO - Jaqueta biker de vinil
+[2025-04-21T14:06:44.492+0000] {logging_mixin.py:190} INFO - Courrèges
+[2025-04-21T14:06:45.493+0000] {scrapping.py:92} INFO - Produto 67 processado
+[2025-04-21T14:06:45.524+0000] {logging_mixin.py:190} INFO - Jaqueta Softshell de capuz
+[2025-04-21T14:06:45.529+0000] {logging_mixin.py:190} INFO - Colmar
+[2025-04-21T14:06:46.530+0000] {scrapping.py:92} INFO - Produto 68 processado
+[2025-04-21T14:06:46.561+0000] {logging_mixin.py:190} INFO - Jaqueta Adrien Brody de couro
+[2025-04-21T14:06:46.569+0000] {logging_mixin.py:190} INFO - Bally
+[2025-04-21T14:06:47.569+0000] {scrapping.py:92} INFO - Produto 69 processado
+[2025-04-21T14:06:47.603+0000] {logging_mixin.py:190} INFO - Jaqueta com aplicação de logo
+[2025-04-21T14:06:47.609+0000] {logging_mixin.py:190} INFO - Salvatore Santoro
+[2025-04-21T14:06:48.610+0000] {scrapping.py:92} INFO - Produto 70 processado
+[2025-04-21T14:06:48.642+0000] {logging_mixin.py:190} INFO - Jaqueta esportiva Laurel com logo
+[2025-04-21T14:06:48.648+0000] {logging_mixin.py:190} INFO - Casablanca
+[2025-04-21T14:06:49.649+0000] {scrapping.py:92} INFO - Produto 71 processado
+[2025-04-21T14:06:49.691+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com zíper
+[2025-04-21T14:06:49.698+0000] {logging_mixin.py:190} INFO - MSGM
+[2025-04-21T14:06:50.699+0000] {scrapping.py:92} INFO - Produto 72 processado
+[2025-04-21T14:06:50.731+0000] {logging_mixin.py:190} INFO - Jaqueta La Veste à Capuche Laine
+[2025-04-21T14:06:50.737+0000] {logging_mixin.py:190} INFO - Drôle De Monsieur
+[2025-04-21T14:06:51.738+0000] {scrapping.py:92} INFO - Produto 73 processado
+[2025-04-21T14:06:51.767+0000] {logging_mixin.py:190} INFO - Jaqueta bomber La Coupe des Dieux dupla face
+[2025-04-21T14:06:51.773+0000] {logging_mixin.py:190} INFO - Versace
+[2025-04-21T14:06:52.773+0000] {scrapping.py:92} INFO - Produto 74 processado
+[2025-04-21T14:06:52.804+0000] {logging_mixin.py:190} INFO - Jaqueta corta-vento com patch de bússola
+[2025-04-21T14:06:52.810+0000] {logging_mixin.py:190} INFO - Stone Island
+[2025-04-21T14:06:53.810+0000] {scrapping.py:92} INFO - Produto 75 processado
+[2025-04-21T14:06:53.840+0000] {logging_mixin.py:190} INFO - Jaqueta com placa de logo
+[2025-04-21T14:06:53.847+0000] {logging_mixin.py:190} INFO - Herno
+[2025-04-21T14:06:54.848+0000] {scrapping.py:92} INFO - Produto 76 processado
+[2025-04-21T14:06:54.876+0000] {logging_mixin.py:190} INFO - Blazer de lã com padronagem pied-de-poule
+[2025-04-21T14:06:54.883+0000] {logging_mixin.py:190} INFO - FURSAC
+[2025-04-21T14:06:56.428+0000] {scrapping.py:92} INFO - Produto 77 processado
+[2025-04-21T14:06:56.457+0000] {logging_mixin.py:190} INFO - Blazer de lã com abotoamento duplo
+[2025-04-21T14:06:56.463+0000] {logging_mixin.py:190} INFO - AMI Paris
+[2025-04-21T14:06:57.464+0000] {scrapping.py:92} INFO - Produto 78 processado
+[2025-04-21T14:06:57.502+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê camuflada
+[2025-04-21T14:06:57.510+0000] {logging_mixin.py:190} INFO - Andersson Bell
+[2025-04-21T14:06:58.511+0000] {scrapping.py:92} INFO - Produto 79 processado
+[2025-04-21T14:06:58.542+0000] {logging_mixin.py:190} INFO - Jaqueta W-Oval com logo gravado
+[2025-04-21T14:06:58.548+0000] {logging_mixin.py:190} INFO - Diesel
+[2025-04-21T14:06:59.549+0000] {scrapping.py:92} INFO - Produto 80 processado
+[2025-04-21T14:06:59.583+0000] {logging_mixin.py:190} INFO - Blazer risca de giz com abotoamento duplo
+[2025-04-21T14:06:59.589+0000] {logging_mixin.py:190} INFO - Dolce & Gabbana
+[2025-04-21T14:07:00.590+0000] {scrapping.py:92} INFO - Produto 81 processado
+[2025-04-21T14:07:00.622+0000] {logging_mixin.py:190} INFO - Jaqueta de couro com capuz
+[2025-04-21T14:07:00.628+0000] {logging_mixin.py:190} INFO - ERALDO
+[2025-04-21T14:07:01.629+0000] {scrapping.py:92} INFO - Produto 82 processado
+[2025-04-21T14:07:01.660+0000] {logging_mixin.py:190} INFO - Jaqueta S-After-A
+[2025-04-21T14:07:01.666+0000] {logging_mixin.py:190} INFO - Diesel
+[2025-04-21T14:07:02.666+0000] {scrapping.py:92} INFO - Produto 83 processado
+[2025-04-21T14:07:02.695+0000] {logging_mixin.py:190} INFO - Jaqueta TNF x Yinka Ilori
+[2025-04-21T14:07:02.701+0000] {logging_mixin.py:190} INFO - The North Face
+[2025-04-21T14:07:03.701+0000] {scrapping.py:92} INFO - Produto 84 processado
+[2025-04-21T14:07:03.753+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com bordado de texto
+[2025-04-21T14:07:03.760+0000] {logging_mixin.py:190} INFO - Palm Angels
+[2025-04-21T14:07:04.761+0000] {scrapping.py:92} INFO - Produto 85 processado
+[2025-04-21T14:07:04.791+0000] {logging_mixin.py:190} INFO - Jaqueta com estampa de logo
+[2025-04-21T14:07:04.797+0000] {logging_mixin.py:190} INFO - Maison Kitsuné
+[2025-04-21T14:07:05.797+0000] {scrapping.py:92} INFO - Produto 86 processado
+[2025-04-21T14:07:05.829+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com patch de logo
+[2025-04-21T14:07:05.835+0000] {logging_mixin.py:190} INFO - Lacoste
+[2025-04-21T14:07:06.836+0000] {scrapping.py:92} INFO - Produto 87 processado
+[2025-04-21T14:07:06.865+0000] {logging_mixin.py:190} INFO - Jaqueta Merchant
+[2025-04-21T14:07:06.871+0000] {logging_mixin.py:190} INFO - Universal Works
+[2025-04-21T14:07:07.871+0000] {scrapping.py:92} INFO - Produto 88 processado
+[2025-04-21T14:07:07.900+0000] {logging_mixin.py:190} INFO - Jaqueta matelassê com capuz
+[2025-04-21T14:07:07.905+0000] {logging_mixin.py:190} INFO - Herno
+[2025-04-21T14:07:08.906+0000] {scrapping.py:92} INFO - Produto 89 processado
+[2025-04-21T14:07:08.947+0000] {logging_mixin.py:190} INFO - Jaqueta Skidoo com capuz
+[2025-04-21T14:07:08.953+0000] {logging_mixin.py:190} INFO - Napapijri
+[2025-04-21T14:07:09.954+0000] {scrapping.py:92} INFO - Produto 90 processado
+[2025-04-21T14:07:09.994+0000] {logging_mixin.py:190} INFO - Blazer com abotoamento duplo
+[2025-04-21T14:07:10.000+0000] {logging_mixin.py:190} INFO - MSGM
+[2025-04-21T14:07:11.001+0000] {scrapping.py:92} INFO - Produto 91 processado
+[2025-04-21T14:07:11.030+0000] {logging_mixin.py:190} INFO - Jaqueta bomber com efeito refletivo
+[2025-04-21T14:07:11.036+0000] {logging_mixin.py:190} INFO - Ferrari
+[2025-04-21T14:07:12.037+0000] {scrapping.py:92} INFO - Produto 92 processado
+[2025-04-21T14:07:12.071+0000] {logging_mixin.py:190} INFO - Jaqueta stretch com zíper
+[2025-04-21T14:07:12.077+0000] {logging_mixin.py:190} INFO - Paul & Shark
+[2025-04-21T14:07:13.078+0000] {scrapping.py:92} INFO - Produto 93 processado
+[2025-04-21T14:07:13.112+0000] {logging_mixin.py:190} INFO - Blazer de lã virgem com abotoamento
+[2025-04-21T14:07:13.120+0000] {logging_mixin.py:190} INFO - Tagliatore
+[2025-04-21T14:07:14.120+0000] {scrapping.py:92} INFO - Produto 94 processado
+[2025-04-21T14:07:14.157+0000] {logging_mixin.py:190} INFO - Jaqueta com logo emborrachado
+[2025-04-21T14:07:14.163+0000] {logging_mixin.py:190} INFO - Moschino
+[2025-04-21T14:07:15.164+0000] {scrapping.py:92} INFO - Produto 95 processado
+[2025-04-21T14:07:19.275+0000] {scrapping.py:121} INFO - Dados salvos em: /opt/***/dados/bruto/promocoes_jaquetas_21042025_2.csv
+[2025-04-21T14:07:19.275+0000] {scrapping.py:123} INFO - Iniciando tratamento...
+[2025-04-21T14:07:19.289+0000] {tratamento.py:34} INFO - Arquivo mais recente encontrado: /opt/***/dados/bruto/promocoes_jaquetas_21042025_2.csv
+[2025-04-21T14:07:29.636+0000] {logging_mixin.py:190} INFO - +--------------------+--------------------+-----+--------------+-------------------+--------+--------------+-----+-------------------+-------------+
+|             Produto|               Marca|Preço|Preço Original|               Data|Desconto|Categoria Luxo|Media|Desconto Percentual|Classificação|
++--------------------+--------------------+-----+--------------+-------------------+--------+--------------+-----+-------------------+-------------+
+|Jaqueta bomber co...|              BARROW| 3334|          6655|21-04-2025 14:07:28|   0.499|        Luxoso|Baixa|               49.9|      Jaqueta|
+|    Jaqueta de couro|   Salvatore Santoro|19902|         27047|21-04-2025 14:07:28|  0.2642| Muito Luxuoso| Alta|              26.42|      Jaqueta|
+|Jaqueta bomber V-...|Versace Jeans Cou...| 6873|          9813|21-04-2025 14:07:28|  0.2996|        Luxoso|Baixa|              29.96|      Jaqueta|
+|Jaqueta Retro Denali|      The North Face| 1629|          2322|21-04-2025 14:07:28|  0.2984|  Pouco Luxoso|Baixa|              29.84|      Jaqueta|
+|Jaqueta bomber de...|          Dell'oglio| 9356|         14387|21-04-2025 14:07:28|  0.3497|        Luxoso| Alta|              34.97|      Jaqueta|
+|Jaqueta Polo Pony...|   Polo Ralph Lauren| 4080|          4299|21-04-2025 14:07:28|  0.0509|        Luxoso|Baixa|               5.09|      Jaqueta|
+|Jaqueta bomber co...|            Burberry|15962|         24551|21-04-2025 14:07:28|  0.3498| Muito Luxuoso| Alta|              34.98|      Jaqueta|
+|Jaqueta matelassê...|Karl Lagerfeld Jeans| 2055|          4097|21-04-2025 14:07:28|  0.4984|        Luxoso|Baixa|              49.84|      Jaqueta|
+|Jaqueta matelassê...|      The North Face| 3870|          5364|21-04-2025 14:07:28|  0.2785|        Luxoso|Baixa|              27.85|      Jaqueta|
+|Jaqueta college M...|           Represent| 4223|          6028|21-04-2025 14:07:28|  0.2994|        Luxoso|Baixa|              29.94|      Jaqueta|
+|Jaqueta bomber co...|      Karl Lagerfeld| 3665|          7318|21-04-2025 14:07:28|  0.4992|        Luxoso|Baixa|              49.92|      Jaqueta|
+|Jaqueta college c...|              BARROW| 3334|          6655|21-04-2025 14:07:28|   0.499|        Luxoso|Baixa|               49.9|      Jaqueta|
+|Blazer com abotoa...|     Dolce & Gabbana|22438|         26487|21-04-2025 14:07:28|  0.1529| Muito Luxuoso| Alta|              15.29|       Blazer|
+|Blazer com abotoa...|               Herno| 3668|          6073|21-04-2025 14:07:28|   0.396|        Luxoso|Baixa|               39.6|       Blazer|
+|Jaqueta com capuz...|        Stone Island| 7404|          8225|21-04-2025 14:07:28|  0.0998|        Luxoso|Baixa|               9.98|      Jaqueta|
+|Blazer Sicilia co...|     Dolce & Gabbana|23067|         27230|21-04-2025 14:07:28|  0.1529| Muito Luxuoso| Alta|              15.29|       Blazer|
+|Jaqueta com padro...|             Balmain| 8267|         16900|21-04-2025 14:07:28|  0.5108|        Luxoso|Baixa|              51.08|      Jaqueta|
+|Blazer Punto com ...|      Karl Lagerfeld| 2567|          5122|21-04-2025 14:07:28|  0.4988|        Luxoso|Baixa|              49.88|       Blazer|
+|Jaqueta x Ronaldi...|            KidSuper| 2528|          3673|21-04-2025 14:07:28|  0.3117|        Luxoso|Baixa|              31.17|      Jaqueta|
+|Blazer com abotoa...|      Karl Lagerfeld| 3519|          7025|21-04-2025 14:07:28|  0.4991|        Luxoso|Baixa|              49.91|       Blazer|
++--------------------+--------------------+-----+--------------+-------------------+--------+--------------+-----+-------------------+-------------+
+only showing top 20 rows
+[2025-04-21T14:07:30.400+0000] {tratamento.py:94} INFO - CSV tratado salvo como jaquetas_tratado.csv
+[2025-04-21T14:07:36.740+0000] {tratamento.py:113} INFO - Parquet tratado salvo como dados_tratado.parquet
+[2025-04-21T14:07:41.947+0000] {tratamento.py:121} INFO - CSV consolidado (jaquetas_todos.csv) salvo com sucesso.
+[2025-04-21T14:07:42.008+0000] {tratamento.py:124} INFO - Spark encerrado com sucesso.
+[2025-04-21T14:07:42.008+0000] {scrapping.py:125} INFO - Tratamento finalizado.
+[2025-04-21T14:07:42.010+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-21T14:07:42.025+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-21T14:07:42.025+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=scraping_farfetch_mensal, task_id=executar_scraping_farfetch, run_id=manual__2025-04-21T13:49:50.948276+00:00, execution_date=20250421T134950, start_date=20250421T140507, end_date=20250421T140742
+[2025-04-21T14:07:42.093+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-21T14:07:42.108+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-21T14:07:42.112+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

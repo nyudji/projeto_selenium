@@ -1,0 +1,138 @@
+services:
+
+  airflow-webserver:
+    container_name: airflow-webserver
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    restart: always
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__WEBSERVER__SECRET_KEY=mysecretkey
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - _JAVA_OPTIONS=-Xmx2g
+      - SELENIUM_DRIVER=firefox
+
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
+      - ./scrapping.py:/opt/airflow/scrapping.py
+      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./dados:/opt/airflow/dados
+
+    ports:
+      - "8080:8080"
+    command: ["airflow", "webserver"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - airflow_network
+
+  airflow-scheduler:
+    container_name: airflow-scheduler
+    restart: always
+    depends_on:
+      - postgres
+      - redis
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL=60
+
+
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
+      - ./scrapping.py:/opt/airflow/scrapping.py
+      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./dados:/opt/airflow/dados
+
+    command: ["airflow", "scheduler"]
+    networks:
+      - airflow_network
+
+  airflow-worker:
+    restart: always
+    depends_on:
+      - airflow-webserver
+      - airflow-scheduler
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=true
+      - AIRFLOW__WEBSERVER__WORKERS=1
+      - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
+      - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      
+    command: ["airflow", "celery", "worker"]
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./requirements.txt:/opt/airflow/requirements.txt
+      - ./scrapping.py:/opt/airflow/scrapping.py
+      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./dados:/opt/airflow/dados
+    networks:
+      - airflow_network
+
+
+  postgres:
+    image: postgres:17
+    container_name: airflow-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+    networks:
+      - airflow_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 10s
+      retries: 5
+
+  redis:
+    image: redis:latest
+    container_name: airflow-redis
+    restart: always
+    networks:
+      - airflow_network
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  airflow_network:
+    driver: bridge

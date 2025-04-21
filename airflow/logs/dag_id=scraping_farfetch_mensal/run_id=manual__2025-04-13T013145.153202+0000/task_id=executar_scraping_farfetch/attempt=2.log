@@ -1,0 +1,326 @@
+[2025-04-13T01:44:47.851+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-13T01:44:47.866+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-13T01:31:45.153202+00:00 [queued]>
+[2025-04-13T01:44:47.873+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-13T01:31:45.153202+00:00 [queued]>
+[2025-04-13T01:44:47.873+0000] {taskinstance.py:2867} INFO - Starting attempt 2 of 2
+[2025-04-13T01:44:47.886+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): executar_scraping_farfetch> on 2025-04-13 01:31:45.153202+00:00
+[2025-04-13T01:44:47.894+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2409) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-13T01:44:47.901+0000] {standard_task_runner.py:72} INFO - Started process 2412 to run task
+[2025-04-13T01:44:47.903+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scraping_farfetch_mensal', 'executar_scraping_farfetch', 'manual__2025-04-13T01:31:45.153202+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag_scraping.py', '--cfg-path', '/tmp/tmpir1yx2w0']
+[2025-04-13T01:44:47.910+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask executar_scraping_farfetch
+[2025-04-13T01:44:48.045+0000] {task_command.py:467} INFO - Running <TaskInstance: scraping_farfetch_mensal.executar_scraping_farfetch manual__2025-04-13T01:31:45.153202+00:00 [running]> on host 83b21d5a5ce3
+[2025-04-13T01:44:48.138+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='nicolas' AIRFLOW_CTX_DAG_ID='scraping_farfetch_mensal' AIRFLOW_CTX_TASK_ID='executar_scraping_farfetch' AIRFLOW_CTX_EXECUTION_DATE='2025-04-13T01:31:45.153202+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-13T01:31:45.153202+00:00'
+[2025-04-13T01:44:48.140+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-13T01:44:56.104+0000] {scrapping.py:35} INFO - Acessando o link: https://www.farfetch.com/br/shopping/men/items.aspx
+[2025-04-13T01:45:03.580+0000] {scrapping.py:54} INFO - Clicou no menu de Jaquetas via JavaScript
+[2025-04-13T01:45:12.196+0000] {scrapping.py:76} INFO - Total de produtos: 96
+[2025-04-13T01:45:13.432+0000] {scrapping.py:90} INFO - Produto 0 processado
+[2025-04-13T01:45:15.432+0000] {scrapping.py:90} INFO - Produto 1 processado
+[2025-04-13T01:45:16.515+0000] {scrapping.py:90} INFO - Produto 2 processado
+[2025-04-13T01:45:17.544+0000] {scrapping.py:90} INFO - Produto 3 processado
+[2025-04-13T01:45:18.573+0000] {scrapping.py:90} INFO - Produto 4 processado
+[2025-04-13T01:45:19.598+0000] {scrapping.py:90} INFO - Produto 5 processado
+[2025-04-13T01:45:20.626+0000] {scrapping.py:90} INFO - Produto 6 processado
+[2025-04-13T01:45:21.655+0000] {scrapping.py:90} INFO - Produto 7 processado
+[2025-04-13T01:45:22.685+0000] {scrapping.py:90} INFO - Produto 8 processado
+[2025-04-13T01:45:23.711+0000] {scrapping.py:90} INFO - Produto 9 processado
+[2025-04-13T01:45:24.740+0000] {scrapping.py:90} INFO - Produto 10 processado
+[2025-04-13T01:45:25.767+0000] {scrapping.py:90} INFO - Produto 11 processado
+[2025-04-13T01:45:26.798+0000] {scrapping.py:90} INFO - Produto 12 processado
+[2025-04-13T01:45:27.823+0000] {scrapping.py:90} INFO - Produto 13 processado
+[2025-04-13T01:45:28.853+0000] {scrapping.py:90} INFO - Produto 14 processado
+[2025-04-13T01:45:29.879+0000] {scrapping.py:90} INFO - Produto 15 processado
+[2025-04-13T01:45:30.907+0000] {scrapping.py:90} INFO - Produto 16 processado
+[2025-04-13T01:45:31.970+0000] {scrapping.py:90} INFO - Produto 17 processado
+[2025-04-13T01:45:32.998+0000] {scrapping.py:90} INFO - Produto 18 processado
+[2025-04-13T01:45:34.041+0000] {scrapping.py:90} INFO - Produto 19 processado
+[2025-04-13T01:45:35.071+0000] {scrapping.py:90} INFO - Produto 20 processado
+[2025-04-13T01:45:36.095+0000] {scrapping.py:90} INFO - Produto 21 processado
+[2025-04-13T01:45:37.122+0000] {scrapping.py:90} INFO - Produto 22 processado
+[2025-04-13T01:45:38.145+0000] {scrapping.py:90} INFO - Produto 23 processado
+[2025-04-13T01:45:39.170+0000] {scrapping.py:90} INFO - Produto 24 processado
+[2025-04-13T01:45:40.192+0000] {scrapping.py:90} INFO - Produto 25 processado
+[2025-04-13T01:45:41.219+0000] {scrapping.py:90} INFO - Produto 26 processado
+[2025-04-13T01:45:42.243+0000] {scrapping.py:90} INFO - Produto 27 processado
+[2025-04-13T01:45:43.268+0000] {scrapping.py:90} INFO - Produto 28 processado
+[2025-04-13T01:45:44.292+0000] {scrapping.py:90} INFO - Produto 29 processado
+[2025-04-13T01:45:46.072+0000] {scrapping.py:90} INFO - Produto 30 processado
+[2025-04-13T01:45:47.097+0000] {scrapping.py:90} INFO - Produto 31 processado
+[2025-04-13T01:45:48.121+0000] {scrapping.py:90} INFO - Produto 32 processado
+[2025-04-13T01:45:49.148+0000] {scrapping.py:90} INFO - Produto 33 processado
+[2025-04-13T01:45:50.174+0000] {scrapping.py:90} INFO - Produto 34 processado
+[2025-04-13T01:45:51.197+0000] {scrapping.py:90} INFO - Produto 35 processado
+[2025-04-13T01:45:52.230+0000] {scrapping.py:90} INFO - Produto 36 processado
+[2025-04-13T01:45:53.255+0000] {scrapping.py:90} INFO - Produto 37 processado
+[2025-04-13T01:45:54.279+0000] {scrapping.py:90} INFO - Produto 38 processado
+[2025-04-13T01:45:55.302+0000] {scrapping.py:90} INFO - Produto 39 processado
+[2025-04-13T01:45:56.325+0000] {scrapping.py:90} INFO - Produto 40 processado
+[2025-04-13T01:45:57.350+0000] {scrapping.py:90} INFO - Produto 41 processado
+[2025-04-13T01:45:58.374+0000] {scrapping.py:90} INFO - Produto 42 processado
+[2025-04-13T01:45:59.401+0000] {scrapping.py:90} INFO - Produto 43 processado
+[2025-04-13T01:46:00.424+0000] {scrapping.py:90} INFO - Produto 44 processado
+[2025-04-13T01:46:01.450+0000] {scrapping.py:90} INFO - Produto 45 processado
+[2025-04-13T01:46:02.473+0000] {scrapping.py:90} INFO - Produto 46 processado
+[2025-04-13T01:46:03.497+0000] {scrapping.py:90} INFO - Produto 47 processado
+[2025-04-13T01:46:04.521+0000] {scrapping.py:90} INFO - Produto 48 processado
+[2025-04-13T01:46:05.546+0000] {scrapping.py:90} INFO - Produto 49 processado
+[2025-04-13T01:46:06.571+0000] {scrapping.py:90} INFO - Produto 50 processado
+[2025-04-13T01:46:07.600+0000] {scrapping.py:90} INFO - Produto 51 processado
+[2025-04-13T01:46:08.627+0000] {scrapping.py:90} INFO - Produto 52 processado
+[2025-04-13T01:46:09.654+0000] {scrapping.py:90} INFO - Produto 53 processado
+[2025-04-13T01:46:10.675+0000] {scrapping.py:90} INFO - Produto 54 processado
+[2025-04-13T01:46:11.699+0000] {scrapping.py:90} INFO - Produto 55 processado
+[2025-04-13T01:46:12.719+0000] {scrapping.py:90} INFO - Produto 56 processado
+[2025-04-13T01:46:13.742+0000] {scrapping.py:90} INFO - Produto 57 processado
+[2025-04-13T01:46:14.764+0000] {scrapping.py:90} INFO - Produto 58 processado
+[2025-04-13T01:43:22.818+0000] {scrapping.py:90} INFO - Produto 59 processado
+[2025-04-13T01:46:17.380+0000] {scrapping.py:90} INFO - Produto 60 processado
+[2025-04-13T01:46:18.405+0000] {scrapping.py:90} INFO - Produto 61 processado
+[2025-04-13T01:46:19.428+0000] {scrapping.py:90} INFO - Produto 62 processado
+[2025-04-13T01:46:20.452+0000] {scrapping.py:90} INFO - Produto 63 processado
+[2025-04-13T01:46:21.475+0000] {scrapping.py:90} INFO - Produto 64 processado
+[2025-04-13T01:46:22.500+0000] {scrapping.py:90} INFO - Produto 65 processado
+[2025-04-13T01:46:23.524+0000] {scrapping.py:90} INFO - Produto 66 processado
+[2025-04-13T01:46:24.547+0000] {scrapping.py:90} INFO - Produto 67 processado
+[2025-04-13T01:46:25.570+0000] {scrapping.py:90} INFO - Produto 68 processado
+[2025-04-13T01:46:26.596+0000] {scrapping.py:90} INFO - Produto 69 processado
+[2025-04-13T01:46:27.619+0000] {scrapping.py:90} INFO - Produto 70 processado
+[2025-04-13T01:46:28.642+0000] {scrapping.py:90} INFO - Produto 71 processado
+[2025-04-13T01:46:29.665+0000] {scrapping.py:90} INFO - Produto 72 processado
+[2025-04-13T01:46:30.691+0000] {scrapping.py:90} INFO - Produto 73 processado
+[2025-04-13T01:46:31.716+0000] {scrapping.py:90} INFO - Produto 74 processado
+[2025-04-13T01:46:32.740+0000] {scrapping.py:90} INFO - Produto 75 processado
+[2025-04-13T01:46:33.764+0000] {scrapping.py:90} INFO - Produto 76 processado
+[2025-04-13T01:46:34.789+0000] {scrapping.py:90} INFO - Produto 77 processado
+[2025-04-13T01:46:35.811+0000] {scrapping.py:90} INFO - Produto 78 processado
+[2025-04-13T01:46:36.833+0000] {scrapping.py:90} INFO - Produto 79 processado
+[2025-04-13T01:46:37.859+0000] {scrapping.py:90} INFO - Produto 80 processado
+[2025-04-13T01:46:38.882+0000] {scrapping.py:90} INFO - Produto 81 processado
+[2025-04-13T01:46:39.903+0000] {scrapping.py:90} INFO - Produto 82 processado
+[2025-04-13T01:46:40.926+0000] {scrapping.py:90} INFO - Produto 83 processado
+[2025-04-13T01:46:41.948+0000] {scrapping.py:90} INFO - Produto 84 processado
+[2025-04-13T01:46:42.971+0000] {scrapping.py:90} INFO - Produto 85 processado
+[2025-04-13T01:46:43.992+0000] {scrapping.py:90} INFO - Produto 86 processado
+[2025-04-13T01:46:45.014+0000] {scrapping.py:90} INFO - Produto 87 processado
+[2025-04-13T01:46:46.036+0000] {scrapping.py:90} INFO - Produto 88 processado
+[2025-04-13T01:46:48.175+0000] {scrapping.py:90} INFO - Produto 89 processado
+[2025-04-13T01:46:49.198+0000] {scrapping.py:90} INFO - Produto 90 processado
+[2025-04-13T01:46:50.221+0000] {scrapping.py:90} INFO - Produto 91 processado
+[2025-04-13T01:46:51.242+0000] {scrapping.py:90} INFO - Produto 92 processado
+[2025-04-13T01:46:52.266+0000] {scrapping.py:90} INFO - Produto 93 processado
+[2025-04-13T01:46:53.288+0000] {scrapping.py:90} INFO - Produto 94 processado
+[2025-04-13T01:46:54.310+0000] {scrapping.py:90} INFO - Produto 95 processado
+[2025-04-13T01:46:57.912+0000] {scrapping.py:119} INFO - Dados salvos em: /opt/***/dados/bruto/promocoes_jaquetas_13042025_2.csv
+[2025-04-13T01:46:57.912+0000] {scrapping.py:121} INFO - Iniciando tratamento...
+[2025-04-13T01:46:57.926+0000] {tratamento.py:34} INFO - Arquivo mais recente encontrado: /opt/***/dados/bruto/promocoes_jaquetas_13042025_2.csv
+[2025-04-13T01:47:00.135+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scrapping.py", line 125, in run_scraping
+    salvar_dados(produtos_lista)
+  File "/opt/airflow/scrapping.py", line 122, in salvar_dados
+    tratamento()
+  File "/opt/airflow/tratamento.py", line 39, in tratamento
+    spark = SparkSession.builder.appName("Calcula desconto").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 228, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 392, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 146, in __init__
+    self._do_init(master, appName, sparkHome, pyFiles, environment, batchSize, serializer,
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 209, in _do_init
+    self._jsc = jsc or self._initialize_context(self._conf._jconf)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 329, in _initialize_context
+    return self._jvm.JavaSparkContext(jconf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py", line 1585, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x2e39ef76) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x2e39ef76
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[2025-04-13T01:47:00.149+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=scraping_farfetch_mensal, task_id=executar_scraping_farfetch, run_id=manual__2025-04-13T01:31:45.153202+00:00, execution_date=20250413T013145, start_date=20250413T014447, end_date=20250413T014700
+[2025-04-13T01:47:00.181+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-13T01:47:00.181+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task executar_scraping_farfetch (An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x2e39ef76) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x2e39ef76
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+; 2412)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scrapping.py", line 125, in run_scraping
+    salvar_dados(produtos_lista)
+  File "/opt/airflow/scrapping.py", line 122, in salvar_dados
+    tratamento()
+  File "/opt/airflow/tratamento.py", line 39, in tratamento
+    spark = SparkSession.builder.appName("Calcula desconto").getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py", line 228, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 392, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 146, in __init__
+    self._do_init(master, appName, sparkHome, pyFiles, environment, batchSize, serializer,
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 209, in _do_init
+    self._jsc = jsc or self._initialize_context(self._conf._jconf)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pyspark/context.py", line 329, in _initialize_context
+    return self._jvm.JavaSparkContext(jconf)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py", line 1585, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+: java.lang.IllegalAccessError: class org.apache.spark.storage.StorageUtils$ (in unnamed module @0x2e39ef76) cannot access class sun.nio.ch.DirectBuffer (in module java.base) because module java.base does not export sun.nio.ch to unnamed module @0x2e39ef76
+	at org.apache.spark.storage.StorageUtils$.<init>(StorageUtils.scala:213)
+	at org.apache.spark.storage.StorageUtils$.<clinit>(StorageUtils.scala)
+	at org.apache.spark.storage.BlockManagerMasterEndpoint.<init>(BlockManagerMasterEndpoint.scala:110)
+	at org.apache.spark.SparkEnv$.$anonfun$create$9(SparkEnv.scala:348)
+	at org.apache.spark.SparkEnv$.registerOrLookupEndpoint$1(SparkEnv.scala:287)
+	at org.apache.spark.SparkEnv$.create(SparkEnv.scala:336)
+	at org.apache.spark.SparkEnv$.createDriverEnv(SparkEnv.scala:191)
+	at org.apache.spark.SparkContext.createSparkEnv(SparkContext.scala:277)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:460)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:238)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[2025-04-13T01:47:00.230+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-13T01:47:00.244+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-13T01:47:00.248+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

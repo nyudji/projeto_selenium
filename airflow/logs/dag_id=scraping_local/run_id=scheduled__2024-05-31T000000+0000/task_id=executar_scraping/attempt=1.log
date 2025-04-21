@@ -1,0 +1,90 @@
+[2025-04-03T00:41:33.772+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-03T00:41:33.797+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scraping_local.executar_scraping scheduled__2024-05-31T00:00:00+00:00 [queued]>
+[2025-04-03T00:41:33.806+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scraping_local.executar_scraping scheduled__2024-05-31T00:00:00+00:00 [queued]>
+[2025-04-03T00:41:33.806+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-03T00:41:33.822+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): executar_scraping> on 2024-05-31 00:00:00+00:00
+[2025-04-03T00:41:33.832+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=286) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-03T00:41:33.834+0000] {standard_task_runner.py:72} INFO - Started process 299 to run task
+[2025-04-03T00:41:33.834+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'scraping_local', 'executar_scraping', 'scheduled__2024-05-31T00:00:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/dag_scraping.py', '--cfg-path', '/tmp/tmpreksce1c']
+[2025-04-03T00:41:33.835+0000] {standard_task_runner.py:105} INFO - Job 62: Subtask executar_scraping
+[2025-04-03T00:41:33.891+0000] {task_command.py:467} INFO - Running <TaskInstance: scraping_local.executar_scraping scheduled__2024-05-31T00:00:00+00:00 [running]> on host 7b1184e308c8
+[2025-04-03T00:41:34.004+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='nicolas' AIRFLOW_CTX_DAG_ID='scraping_local' AIRFLOW_CTX_TASK_ID='executar_scraping' AIRFLOW_CTX_EXECUTION_DATE='2024-05-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-31T00:00:00+00:00'
+[2025-04-03T00:41:34.004+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-03T00:41:34.020+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-04-03T00:41:34.021+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 ../../scrapping.py']
+[2025-04-03T00:41:34.037+0000] {subprocess.py:99} INFO - Output:
+[2025-04-03T00:41:34.074+0000] {subprocess.py:106} INFO - python3: can't open file '/tmp/***tmpnxs02jf4/../../scrapping.py': [Errno 2] No such file or directory
+[2025-04-03T00:41:34.078+0000] {subprocess.py:110} INFO - Command exited with return code 2
+[2025-04-03T00:41:34.090+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-04-03T00:41:34.095+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=scraping_local, task_id=executar_scraping, run_id=scheduled__2024-05-31T00:00:00+00:00, execution_date=20240531T000000, start_date=20250403T004133, end_date=20250403T004134
+[2025-04-03T00:41:34.135+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-03T00:41:34.135+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 62 for task executar_scraping (Bash command failed. The command returned a non-zero exit code 2.; 299)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-04-03T00:41:34.168+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-03T00:41:34.186+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-03T00:41:34.192+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

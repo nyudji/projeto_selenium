@@ -1,0 +1,103 @@
+[2025-04-03T21:45:56.882+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-03T21:45:56.895+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: executar_script_windows_ssh.rodar_script_via_ssh manual__2025-04-03T21:45:56.268294+00:00 [queued]>
+[2025-04-03T21:45:56.900+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: executar_script_windows_ssh.rodar_script_via_ssh manual__2025-04-03T21:45:56.268294+00:00 [queued]>
+[2025-04-03T21:45:56.901+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-03T21:45:56.912+0000] {taskinstance.py:2890} INFO - Executing <Task(SSHOperator): rodar_script_via_ssh> on 2025-04-03 21:45:56.268294+00:00
+[2025-04-03T21:45:56.917+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=71) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-03T21:45:56.918+0000] {standard_task_runner.py:72} INFO - Started process 72 to run task
+[2025-04-03T21:45:56.918+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'executar_script_windows_ssh', 'rodar_script_via_ssh', 'manual__2025-04-03T21:45:56.268294+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag_scraping.py', '--cfg-path', '/tmp/tmpl1l8sxvt']
+[2025-04-03T21:45:56.920+0000] {standard_task_runner.py:105} INFO - Job 6: Subtask rodar_script_via_ssh
+[2025-04-03T21:45:56.959+0000] {task_command.py:467} INFO - Running <TaskInstance: executar_script_windows_ssh.rodar_script_via_ssh manual__2025-04-03T21:45:56.268294+00:00 [running]> on host 87592eb49ea7
+[2025-04-03T21:45:57.036+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='executar_script_windows_ssh' AIRFLOW_CTX_TASK_ID='rodar_script_via_ssh' AIRFLOW_CTX_EXECUTION_DATE='2025-04-03T21:45:56.268294+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-03T21:45:56.268294+00:00'
+[2025-04-03T21:45:57.037+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-03T21:45:57.047+0000] {ssh.py:123} INFO - ssh_hook is not provided or invalid. Trying ssh_conn_id to create SSHHook.
+[2025-04-03T21:45:57.055+0000] {base.py:84} INFO - Retrieving connection 'windows_ssh'
+[2025-04-03T21:45:57.055+0000] {ssh.py:286} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2025-04-03T21:45:57.074+0000] {transport.py:1944} INFO - Connected (version 2.0, client OpenSSH_for_Windows_9.5)
+[2025-04-03T21:45:57.123+0000] {transport.py:1944} INFO - Authentication (password) successful!
+[2025-04-03T21:45:57.132+0000] {ssh.py:432} INFO - Running command: cmd.exe /c "C:\Users\JPA\Desktop\Projetos\Selenium\projeto_selenium\env\Scripts\python.exe C:\Users\JPA\Desktop\Projetos\Selenium\projeto_selenium\scrapping.py"
+[2025-04-03T21:46:07.712+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/operators/ssh.py", line 173, in execute
+    result = self.run_ssh_client_command(ssh_client, self.command, context=context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/operators/ssh.py", line 158, in run_ssh_client_command
+    exit_status, agg_stdout, agg_stderr = self.hook.exec_ssh_client_command(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/hooks/ssh.py", line 503, in exec_ssh_client_command
+    raise AirflowException("SSH command timed out")
+airflow.exceptions.AirflowException: SSH command timed out
+[2025-04-03T21:46:07.718+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=executar_script_windows_ssh, task_id=rodar_script_via_ssh, run_id=manual__2025-04-03T21:45:56.268294+00:00, execution_date=20250403T214556, start_date=20250403T214556, end_date=20250403T214607
+[2025-04-03T21:46:07.751+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-03T21:46:07.752+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6 for task rodar_script_via_ssh (SSH command timed out; 72)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 424, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/operators/ssh.py", line 173, in execute
+    result = self.run_ssh_client_command(ssh_client, self.command, context=context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/operators/ssh.py", line 158, in run_ssh_client_command
+    exit_status, agg_stdout, agg_stderr = self.hook.exec_ssh_client_command(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/ssh/hooks/ssh.py", line 503, in exec_ssh_client_command
+    raise AirflowException("SSH command timed out")
+airflow.exceptions.AirflowException: SSH command timed out
+[2025-04-03T21:46:07.784+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-03T21:46:07.795+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-03T21:46:07.800+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
