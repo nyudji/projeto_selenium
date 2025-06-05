@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, expr, regexp_replace, round, when, ltrim, trim
+from pyspark.sql.functions import col, expr, regexp_replace, round, when, ltrim, trim, lit
 import os
 import glob
 from pyspark.sql.utils import AnalysisException
@@ -8,6 +8,10 @@ import shutil
 import pyspark
 import time
 from dash import get_latest_file 
+from db.create_table import create_table
+from db.insert_db import insert_postgres
+from db.create_db import create_database
+from db.config import DB_CONFIG
 
 def tratamento(): 
     #Le o arquivo
@@ -28,6 +32,9 @@ def tratamento():
     try:
         #Lendo o CSV com caminho absoluto local (com prefixo file:///)
         df_jaquetas = spark.read.csv("file:///" + arquivo_mais_recente.replace("\\", "/"), header=True, inferSchema=True)
+
+        #Adiciona a data e hora do scraping 
+        df_jaquetas = df_jaquetas.withColumn("Data", lit(datetime.now().strftime("%d-%m-%Y %H:%M:%S")))
 
         #Remover espaços à esquerda (antes do nome do produto)
         df_jaquetas = df_jaquetas.withColumn("Produto", trim(col("Produto")))
@@ -107,8 +114,10 @@ def tratamento():
                 # Se o diretório estiver vazio ou não existir, use apenas df_jaquetas
                 df_combined = df_jaquetas
 
-                # Consolidar em um único arquivo e sobrescrever
+            # Consolidar em um único arquivo e sobrescrever
             df_combined.coalesce(1).write.mode("append").parquet(output_path_parquet)
+
+            # Caminho de saída para os arquivos tratados
             output_path2 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/csv"
             output_path1 = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado/parquet"
             
@@ -157,9 +166,14 @@ def tratamento():
                                 os.remove(os.path.join(output_path1, file))
 
                         print("Arquivos auxiliares removidos após o tempo de espera.")
-            df_pandas = df_jaquetas.toPandas()
+            df_pandas = df_jaquetas.select("Produto", "Preço", "Preço Original", "Desconto", "Desconto Percentual", "Categoria Luxo", 'Classificação',"Data").toPandas()
             df_pandas.to_csv('C:\\Users\\JPA\\Desktop\\Projetos\\Selenium\\projeto_selenium\\dados\\tratado\\csv\\jaquetas_todos.csv', mode='a', header=True, index=False)
-            print("Arquivo CSV com todos criado com sucesso!")    
+            print("Arquivo CSV com todos criado com sucesso!") 
+            # Criar o banco, se não existir
+            create_database(DB_CONFIG['database'])
+            create_table()
+            
+            insert_postgres(df_pandas)
         except Exception as e:
             print(f"Erro ao salvar o arquivo: {e}")
         #Encerrando a sessão do Spark

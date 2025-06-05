@@ -16,3 +16,4 @@ apache-airflow-providers-openlineage>=2.0.0
 apache-airflow-providers-ssh
 seaborn
 matplotlib
+dotenv
