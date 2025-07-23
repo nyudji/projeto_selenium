@@ -55,7 +55,7 @@ RUN GECKODRIVER_VERSION=$(curl -sS https://api.github.com/repos/mozilla/geckodri
 
 # Spark Download e instalação
 RUN mkdir -p /opt/spark && \
-    curl -sL https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz | tar -xz -C /opt/spark --strip-components=1
+    curl -sL https://dlcdn.apache.org/spark/spark-3.5.6/spark-3.5.6-bin-hadoop3.tgz | tar -xz -C /opt/spark --strip-components=1
 
 #Variveis de ambiente Java e Spark
 ENV JAVA_HOME=/opt/java
@@ -80,4 +80,3 @@ WORKDIR /opt/airflow
 
 # Expondo a porta do Airflow
 EXPOSE 8080
-

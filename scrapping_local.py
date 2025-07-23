@@ -27,13 +27,13 @@ def run_scraping():
         time.sleep(2)
 
         try:
-            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ewmv8150') and text()='Jackets']")))
+            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ltr-mnzq4b') and text()='Jackets']")))
             jackets_link.click()
             print("Entrou no menu de Jaquetas!")
         except Exception as e:
             print("Erro ao clicar em Jaquetas:", e)
             nav.refresh()
-            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ewmv8150') and text()='Jackets']")))
+            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ltr-mnzq4b') and text()='Jackets']")))
             jackets_link.click()
             nav.quit()
 

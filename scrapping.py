@@ -47,7 +47,7 @@ def run_scraping():
         time.sleep(2)
 
         try:
-            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ewmv8150') and text()='Jackets']")))
+            jackets_link = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class, 'ltr-mnzq4b') and text()='Jackets']")))
             nav.execute_script("arguments[0].scrollIntoView(true);", jackets_link)
             time.sleep(1)
             nav.execute_script("arguments[0].click();", jackets_link)

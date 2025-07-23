@@ -1,6 +1,6 @@
 # Configurações do banco de dados
 DB_CONFIG = {
-    "host": "localhost",
+    "host": "host.docker.internal",
     "port": 5432,
     "database": "farfetch",
     "user": "postgres",

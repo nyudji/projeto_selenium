@@ -7,6 +7,10 @@ import time
 import glob
 import logging
 from datetime import datetime
+from db.create_table import create_table
+from db.insert_db import insert_postgres
+from db.create_db import create_database
+from db.config import DB_CONFIG
 
 # Configura o logger
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -98,10 +102,14 @@ def tratamento():
                             os.remove(os.path.join(path_csv, lixo))
 
         # Salvar Parquet
-        try:
-            df_existente = spark.read.parquet(f"file://{path_parquet}")
-            df_completo = df_existente.union(df_jaquetas)
-        except Exception:
+        if os.path.exists(path_parquet) and os.listdir(path_parquet):
+            try:
+                df_existente = spark.read.parquet(f"file://{path_parquet}")
+                df_completo = df_existente.union(df_jaquetas)
+            except Exception as e:
+                logging.warning(f"Erro ao ler parquet existente: {e}")
+                df_completo = df_jaquetas
+        else:
             df_completo = df_jaquetas
 
         df_completo.coalesce(1).write.mode("overwrite").parquet(f"file://{path_parquet}")
@@ -119,6 +127,14 @@ def tratamento():
         # Exportar também para CSV geral com Pandas
         df_jaquetas.toPandas().to_csv(os.path.join(path_csv, "jaquetas_todos.csv"), mode='a', header=True, index=False)
         logging.info("CSV consolidado (jaquetas_todos.csv) salvo com sucesso.")
+
+        #Transforma tabela em pandas
+        df_pandas = df_jaquetas.select("Produto", "Preço", "Preço Original", "Desconto", "Desconto Percentual", "Categoria Luxo", 'Classificação',"Data").toPandas()
+
+        # Criar o banco, se não existir
+        create_database(DB_CONFIG['database'])
+        create_table()
+        insert_postgres(df_pandas)
 
         spark.stop()
         logging.info("Spark encerrado com sucesso.")

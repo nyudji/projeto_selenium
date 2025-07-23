@@ -172,7 +172,6 @@ def tratamento():
             # Criar o banco, se não existir
             create_database(DB_CONFIG['database'])
             create_table()
-            
             insert_postgres(df_pandas)
         except Exception as e:
             print(f"Erro ao salvar o arquivo: {e}")
