@@ -3,14 +3,15 @@
   
 </div>
 <br>
-Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em web scraping, tratamento de dados e visualização interativa. Utilizo Selenium para automatizar a extração de ofertas de jaquetas na seção de promoções do site da Farfetch, faço a Extração/Tratamento/Carregamento com PySpark e Pandas.
+Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em Web Scraping, ETL e DataViz. Utilizo Selenium para automatizar a extração de ofertas de jaquetas na seção de promoções do site da Farfetch, faço a Extração/Tratamento/Carregamento com PySpark e Pandas e depois salvando no PostgreSQL. Com Docker e Airflow fiz uma dag de scraping mensal. Por final uma visualização no Streamlit.
 
 ## Scrapping
 - Entra no site da Farfetch
 - Entra na seções de promoções de jaquetas
 - Pega os produtos
 - Realiza o Tratamento
-- Salva em CSV e Parquet os dados brutos e tratados
+- Salva em CSV, Parquet e SQL os dados brutos e tratados
+- Visualização Interativa no Streamlit
   
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3db4877a-0fc8-4724-b9c0-bbc64101d33a" alt="image">
@@ -46,9 +47,9 @@ Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em 
 - Streamlit
 - Pandas
 - Spark
-   
+- PostgreSQL
+
 ## Implementações futuras
-- Integração com Postgre
 - Relatório com IA
 
 
@@ -64,3 +65,8 @@ Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em 
 Baixar: spark 3.5.0 > ; hadoop 3.3.6 ; winutils 3.3.6 ; jdk 11 >
 Extrair o spark no c:/spark, colocar o hadoop no c:/spark/hadoop/ , o winutils dentro do bin do hadoop e configurar as variaveis de ambiente do Windows, JAVA_HOME, SPARK_HOME, PYSPARK_HOME, HADOOP_HOME.
 </div>
+
+## Problemas ao instalar pyspark
+Foi necessário instalar Rust
+https://rustup.rs/
+
