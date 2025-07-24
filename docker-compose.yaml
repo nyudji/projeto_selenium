@@ -21,6 +21,7 @@ services:
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - _JAVA_OPTIONS=-Xmx2g
       - SELENIUM_DRIVER=firefox
+      - DOCKER=true
 
     volumes:
       - ./airflow/dags:/opt/airflow/dags
@@ -55,6 +56,7 @@ services:
       - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
       - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
       - AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL=60
+      - DOCKER=true
 
 
     volumes:
@@ -85,6 +87,7 @@ services:
       - AIRFLOW__CELERY__BROKER_URL=redis://redis:6379/0
       - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - DOCKER=true
       
     command: ["airflow", "celery", "worker"]
     volumes:
