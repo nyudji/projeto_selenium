@@ -62,10 +62,74 @@ Este projeto foi desenvolvido com o objetivo de aprimorar meus conhecimentos em 
 
 <div align="center">
 <h1>Utilizando PySpark no Windows 11</h1>
-Baixar: spark 3.5.0 > ; hadoop 3.3.6 ; winutils 3.3.6 ; jdk 11 >
-Extrair o spark no c:/spark, colocar o hadoop no c:/spark/hadoop/ , o winutils dentro do bin do hadoop e configurar as variaveis de ambiente do Windows, JAVA_HOME, SPARK_HOME, PYSPARK_HOME, HADOOP_HOME.
+Configurando o PySpark no Windows 11
+
+Para colocar o PySpark funcionando na sua máquina Windows 11, siga estes passos:
+
+Pré-requisitos
+
+    Spark: Baixe o Spark 3.5.0.
+
+    Hadoop: Baixe o Hadoop 3.3.6.
+
+    WinUtils: Baixe o WinUtils 3.3.6. (https://github.com/cdarlint/winutils/tree/master/hadoop-3.3.6/bin)
+
+    JDK: Instale o JDK 11 ou superior.
+
+Instalação
+    
+    Necessário WinRar ou outro programa parecido para extrair Spark e Hadoop
+    
+    Extraia o Spark: Extraia o arquivo Spark baixado para C:\spark. 
+
+    Posicione o Hadoop: Mova o conteúdo do arquivo Hadoop baixado para uma nova pasta: C:\spark\hadoop\.
+
+    Adicione o WinUtils: Coloque o arquivo winutils.exe (do download do WinUtils) dentro de C:\spark\hadoop\bin\.
 </div>
 
+
+
+# Configurando variaveis
+✅ 1. Abra a tela de variáveis de ambiente:
+
+    Pressione Win + S e digite "variáveis de ambiente".
+
+    Clique em "Editar variáveis de ambiente do sistema".
+
+    Na janela que abrir, clique em "Variáveis de Ambiente..." no canto inferior direito.
+    
+✅ 2. Crie as variáveis do sistema (parte inferior):
+
+    Clique em "Nova..." em "Variáveis de sistema" e adicione as seguintes:
+    
+    JAVA_HOME = C:\Program Files\Java\jdk-11
+    SPARK_HOME = C:\spark
+    HADOOP_HOME = C:\spark\hadoop
+
+    *Obs caso tenha instalado em locais diferentes, ajustar de acordo. Para confirmar o diretório clique no botão 'Procurar no Diretório'
+    
+
+✅ 3. Edite a variável Path:
+
+    Ainda em "Variáveis de sistema", encontre a variável chamada Path.
+
+    Clique em *Editar*.
+
+    Clique em Novo e adicione:
+
+    %JAVA_HOME%\bin
+    %SPARK_HOME%\bin
+    %HADOOP_HOME%\bin  
+
+✅ 5. Teste se tudo está funcionando:
+    
+    Abra o Prompt de Comando (cmd) e digite:
+    
+    echo %JAVA_HOME%
+    echo %SPARK_HOME%
+    echo %HADOOP_HOME%
+    winutils.exe ls
+    pyspark
 ## Problemas ao instalar pyspark
 Foi necessário instalar Rust
 https://rustup.rs/
