@@ -11,7 +11,3 @@ DB_CONFIG = {
 
 # Nome da tabela
 TABLE_NAME = "promocoes_jaquetas"
-
-# Caminhos dos arquivos
-PASTA_BRUTO = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/bruto"
-PASTA_TRATADO = "C:/Users/JPA/Desktop/Projetos/Selenium/projeto_selenium/dados/tratado"

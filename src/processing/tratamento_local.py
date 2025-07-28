@@ -7,7 +7,7 @@ from datetime import datetime
 import shutil
 import pyspark
 import time
-from dash import get_latest_file 
+from app.dash import get_latest_file 
 from db.create_table import create_table
 from db.insert_db import insert_postgres
 from db.create_db import create_database
@@ -60,7 +60,7 @@ def tratamento():
 
         df_jaquetas.show()
 
-        base_dir = os.path.abspath(os.path.dirname(__file__))
+        base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
         output_path_csv = f"file:///{os.path.join(base_dir, 'dados', 'tratado', 'csv').replace(os.sep, '/')}"
         output_path_parquet = f"file:///{os.path.join(base_dir, 'dados', 'tratado', 'parquet').replace(os.sep, '/')}"
 

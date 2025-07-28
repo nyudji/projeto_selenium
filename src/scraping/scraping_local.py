@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime
-from tratamento_local import tratamento
+from processing.tratamento_local import tratamento
 
 def run_scraping():
     # Abre o navegador
@@ -109,5 +109,7 @@ def run_scraping():
         tratamento()
         print('Tratamento Finalizado')
         print("Scraping feito e dados salvos com sucesso.")    
+        # Fecha o navegador e encerra a sessão do WebDriver
+        nav.quit()
 if __name__ == "__main__":
     run_scraping()

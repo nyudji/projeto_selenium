@@ -28,8 +28,7 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./requirements.txt:/opt/airflow/requirements.txt
-      - ./scrapping.py:/opt/airflow/scrapping.py
-      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./src:/opt/airflow/src
       - ./dados:/opt/airflow/dados
 
     ports:
@@ -64,8 +63,7 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./requirements.txt:/opt/airflow/requirements.txt
-      - ./scrapping.py:/opt/airflow/scrapping.py
-      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./src:/opt/airflow/src
       - ./dados:/opt/airflow/dados
 
     command: ["airflow", "scheduler"]
@@ -95,8 +93,7 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/plugins:/opt/airflow/plugins
       - ./requirements.txt:/opt/airflow/requirements.txt
-      - ./scrapping.py:/opt/airflow/scrapping.py
-      - ./tratamento.py:/opt/airflow/tratamento.py
+      - ./src:/opt/airflow/src
       - ./dados:/opt/airflow/dados
     networks:
       - airflow_network

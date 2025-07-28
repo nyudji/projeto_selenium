@@ -5,9 +5,9 @@ import sys
 import os
 
 # Garante que o Airflow ache o scrapping.py na raiz montada
-sys.path.append("/opt/airflow")
+sys.path.append("/opt/airflow/src")
 
-from scrapping import run_scraping
+from scraping.scraping import run_scraping
 
 # Argumentos padrão da DAG
 default_args = {
@@ -23,7 +23,7 @@ with DAG(
     default_args=default_args,
     description="Executa o scraping da Farfetch uma vez por mês",
     schedule_interval="0 10 1 * *",  # todo dia 1 do mês às 10:00
-    start_date=datetime(2024, 4, 1),
+    start_date=datetime.now(),
     catchup=False,             
     max_active_runs=1,
     tags=["scraping", "selenium", "mensal"],

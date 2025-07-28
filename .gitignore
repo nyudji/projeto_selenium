@@ -1,5 +1,6 @@
 airflow/logs/
 venv/
+.venv/
 logs/
 __pycache__
 *.pyc

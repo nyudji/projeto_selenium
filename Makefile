@@ -42,3 +42,6 @@ airflow-init:
 # 🚦 Lista os logs do Airflow Webserver
 logs:
 	docker-compose logs -f airflow-webserver
+
+streamlit:
+	streamlit run src/app/main.py

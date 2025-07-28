@@ -85,6 +85,9 @@ def tratamento():
         path_base = "/opt/airflow/dados/tratado"
         path_csv = os.path.join(path_base, "csv")
         path_parquet = os.path.join(path_base, "parquet")
+        output_path_parquet = f"file:///{os.path.join('/opt/airflow', 'dados', 'tratado', 'parquet').replace(os.sep, '/')}"
+        logging.info(output_path_parquet)
+        logging.info(path_parquet)
         os.makedirs(path_csv, exist_ok=True)
         os.makedirs(path_parquet, exist_ok=True)
 
@@ -102,27 +105,38 @@ def tratamento():
                             os.remove(os.path.join(path_csv, lixo))
 
         # Salvar Parquet
-        if os.path.exists(path_parquet) and os.listdir(path_parquet):
-            try:
-                df_existente = spark.read.parquet(f"file://{path_parquet}")
-                df_completo = df_existente.union(df_jaquetas)
-            except Exception as e:
-                logging.warning(f"Erro ao ler parquet existente: {e}")
+        try:
+            # Se o diretório Parquet já existe e contém arquivos
+            if os.path.exists(path_parquet) and os.listdir(path_parquet):
+                logging.info(f"Lendo Parquet existente de: {path_parquet}")
+                df_existente = spark.read.parquet(output_path_parquet)
+                logging.info("Lido")
+                df_completo = df_existente.union(df_jaquetas) # Union by name para compatibilidade de schema
+            else:
+                # Se o diretório está vazio ou não existe, apenas escreva o novo DataFrame
+                logging.info(f"Criando novo Parquet em: {path_parquet}")
                 df_completo = df_jaquetas
-        else:
-            df_completo = df_jaquetas
+        except Exception as e:
+            logging.error(f"Erro ao salvar Parquet: {e}")
+        
+        # Sobrescrever o diretório Parquet com o DataFrame combinado.
+        # Isso apaga o conteúdo antigo do diretório e escreve os novos 'part-' files.
+        df_completo.coalesce(1).write.mode("append").parquet(output_path_parquet)
+        logging.info(f"Parquet criado em {output_path_parquet}")
 
-        df_completo.coalesce(1).write.mode("overwrite").parquet(f"file://{path_parquet}")
+        # Remover apenas os arquivos de controle do Spark (_SUCCESS, .crc),
         for file in os.listdir(path_parquet):
             if file.startswith("part-") and file.endswith(".parquet"):
                 full_path = os.path.join(path_parquet, file)
                 if os.path.getsize(full_path) > 0:
-                    shutil.move(full_path, os.path.join(path_parquet, "dados_tratado.parquet"))
-                    logging.info("Parquet tratado salvo como dados_tratado.parquet")
-                    time.sleep(5)
+                    shutil.copy(full_path, os.path.join(path_parquet, "dados_tratado.parquet"))
+                    print("Arquivo parquet copiado e renomeado com sucesso!")
+                    time.sleep(15)
                     for lixo in os.listdir(path_parquet):
                         if lixo.startswith("_SUCCESS") or lixo.endswith(".crc") or lixo.startswith("part-"):
                             os.remove(os.path.join(path_parquet, lixo))
+                    print("Arquivos auxiliares removidos após o tempo de espera.")
+        logging.info("Arquivos auxiliares Parquet (se houver) removidos.")
 
         # Exportar também para CSV geral com Pandas
         df_jaquetas.toPandas().to_csv(os.path.join(path_csv, "jaquetas_todos.csv"), mode='a', header=True, index=False)
