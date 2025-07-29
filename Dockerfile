@@ -19,6 +19,9 @@ RUN mkdir -p /opt/airflow/logs && chmod -R 755 /opt/airflow/logs
 #Cria pasta de logs do scheduler do airflow
 RUN mkdir -p /opt/airflow/logs/scheduler && chmod -R 755 /opt/airflow/logs/scheduler
 
+# Cria pasta de dados e gerencia permissões
+RUN mkdir -p /opt/airflow/dados/tratado/parquet && chmod -R 777 /opt/airflow/dados
+
 # Instalar dependências do sistema necessárias (se necessário)
 RUN apt-get update && apt-get install -y \
     wget \

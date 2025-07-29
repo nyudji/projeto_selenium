@@ -1,97 +1,291 @@
+Produto,Marca,Preço,Preço Original,Data,Desconto,Categoria Luxo,Media,Desconto Percentual,Classificação
+Jaqueta esportiva LR-18,Giuseppe Zanotti,1426,5130.0,29-07-2025 13:28:32,0.722,Pouco Luxoso,Baixa,72.2,Jaqueta
+Jaqueta Corbridge,Barbour,2682,4789.0,29-07-2025 13:28:32,0.44,Luxoso,Baixa,44.0,Jaqueta
+Jaqueta xadrez dupla face,Burberry,6555,9750.0,29-07-2025 13:28:32,0.3277,Luxoso,Alta,32.77,Jaqueta
+Jaqueta bomber de cetim com tag de logo,Dolce & Gabbana,7800,13000.0,29-07-2025 13:28:32,0.4,Luxoso,Alta,40.0,Jaqueta
+Jaqueta de couro,SANDRO,6071,12131.0,29-07-2025 13:28:32,0.4995,Luxoso,Alta,49.95,Jaqueta
+Jaqueta de couro com zíper,Giuseppe Zanotti,4809,13500.0,29-07-2025 13:28:32,0.6438,Luxoso,Alta,64.38,Jaqueta
+Jaqueta de couro com zíper,DSQUARED2,4478,11315.0,29-07-2025 13:28:32,0.6042,Luxoso,Baixa,60.42,Jaqueta
+Jaqueta Madison,Boggi Milano,2985,5326.0,29-07-2025 13:28:32,0.4395,Luxoso,Baixa,43.95,Jaqueta
+Jaqueta acolchoada com logo oculto,DSQUARED2,1917,4838.0,29-07-2025 13:28:32,0.6038,Pouco Luxoso,Baixa,60.38,Jaqueta
+Jaqueta de couro,Roberto Cavalli,2245,5660.0,29-07-2025 13:28:32,0.6034,Luxoso,Baixa,60.34,Jaqueta
+Jaqueta com efeito mescla,Boggi Milano,1069,2662.0,29-07-2025 13:28:32,0.5984,Pouco Luxoso,Baixa,59.84,Jaqueta
+Jaqueta bomber de tricô leve,Boggi Milano,1229,3062.0,29-07-2025 13:28:32,0.5986,Pouco Luxoso,Baixa,59.86,Jaqueta
+Jaqueta de linho,Boggi Milano,1344,2396.0,29-07-2025 13:28:32,0.4391,Pouco Luxoso,Baixa,43.91,Jaqueta
+Jaqueta com trama,SANDRO,2685,5360.0,29-07-2025 13:28:32,0.4991,Luxoso,Baixa,49.91,Jaqueta
+Moletom Sicon Ative com zíper,BOSS,1127,1610.0,29-07-2025 13:28:32,0.3,Pouco Luxoso,Baixa,30.0,Diferentes
+Jaqueta Tommy Hilfiger,Tommy Hilfiger,2230,3285.0,29-07-2025 13:28:32,0.3212,Luxoso,Baixa,32.12,Jaqueta
+Jaqueta de linho e algodão,Boggi Milano,1866,3328.0,29-07-2025 13:28:32,0.4393,Pouco Luxoso,Baixa,43.93,Jaqueta
+Jaqueta matelassê,Rossignol,1282,3194.0,29-07-2025 13:28:32,0.5986,Pouco Luxoso,Baixa,59.86,Jaqueta
+Blazer de jersey,ETRO,10154,17714.0,29-07-2025 13:28:32,0.4268,Muito Luxuoso,Alta,42.68,Blazer
+Jaqueta x Charlie Constantinou matelassê,66 North,8826,24505.0,29-07-2025 13:28:32,0.6398,Luxoso,Alta,63.98,Jaqueta
+Jaqueta acolchoada com abotoamento,DSQUARED2,1763,4448.0,29-07-2025 13:28:32,0.6036,Pouco Luxoso,Baixa,60.36,Jaqueta
+Jaqueta com motivo Polo Pony,Polo Ralph Lauren,1370,1730.0,29-07-2025 13:28:32,0.2081,Pouco Luxoso,Baixa,20.81,Jaqueta
+Blazer de algodão,Balmain,5286,17800.0,29-07-2025 13:28:32,0.703,Luxoso,Alta,70.3,Blazer
+Blazer de linho,Boggi Milano,2134,5326.0,29-07-2025 13:28:32,0.5993,Luxoso,Baixa,59.93,Blazer
+Jaqueta Mountain Q impermeável,The North Face,1444,2125.0,29-07-2025 13:28:32,0.3205,Pouco Luxoso,Baixa,32.05,Jaqueta
+Jaqueta Houdini®,Patagonia,1118,1706.0,29-07-2025 13:28:32,0.3447,Pouco Luxoso,Baixa,34.47,Jaqueta
+Jaqueta Chase com capuz,Carhartt WIP,710,1267.0,29-07-2025 13:28:32,0.4396,Pouco Luxoso,Baixa,43.96,Jaqueta
+Jaqueta Saikuru matelassê,The North Face,2459,3112.0,29-07-2025 13:28:32,0.2098,Luxoso,Baixa,20.98,Jaqueta
+Jaqueta Reedition de vinil,Courrèges,8530,11816.0,29-07-2025 13:28:32,0.2781,Luxoso,Alta,27.81,Jaqueta
+Jaqueta bomber oversized,Random Identities,1176,3736.0,29-07-2025 13:28:32,0.6852,Pouco Luxoso,Baixa,68.52,Jaqueta
+1996 Retro Nuptse jacket,The North Face,3930,6139.0,29-07-2025 13:28:32,0.3598,Luxoso,Baixa,35.98,Diferentes
+Jaqueta college com detalhe de patch,AMIRI,16364,17099.0,29-07-2025 13:28:32,0.043,Muito Luxuoso,Alta,4.3,Jaqueta
+Colete matelassê,Boggi Milano,910,2263.0,29-07-2025 13:28:32,0.5979,Pouco Luxoso,Baixa,59.79,Colete
+Jaqueta acolchoada com logo oculto,DSQUARED2,1917,4838.0,29-07-2025 13:28:32,0.6038,Pouco Luxoso,Baixa,60.38,Jaqueta
+Jaqueta TNF Cordura®,The North Face,1176,1837.0,29-07-2025 13:28:32,0.3598,Pouco Luxoso,Baixa,35.98,Jaqueta
+Jaqueta Petronel,Parajumpers,3989,5539.0,29-07-2025 13:28:32,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Jaqueta Sten-at,Moorer,8196,9476.0,29-07-2025 13:28:32,0.1351,Luxoso,Alta,13.51,Jaqueta
+Jaqueta com estampa de logo,Columbia,1798,2481.0,29-07-2025 13:28:32,0.2753,Pouco Luxoso,Baixa,27.53,Jaqueta
+Jaqueta Silence Monogram de couro,Daily Paper,5121,7529.0,29-07-2025 13:28:32,0.3198,Luxoso,Alta,31.98,Jaqueta
+Jaqueta bomber dupla face,Emporio Armani,3054,5096.0,29-07-2025 13:28:32,0.4007,Luxoso,Baixa,40.07,Jaqueta
+Jaqueta leve,Homme Plissé Issey Miyake,4458,7956.0,29-07-2025 13:28:32,0.4397,Luxoso,Baixa,43.97,Jaqueta
+Jaqueta bomber com bordado de texto,Karl Lagerfeld,2071,4698.0,29-07-2025 13:28:32,0.5592,Luxoso,Baixa,55.92,Jaqueta
+Jaqueta com estampa,Ea7 Emporio Armani,2158,2839.0,29-07-2025 13:28:32,0.2399,Luxoso,Baixa,23.99,Jaqueta
+Blazer Le Fernando,Jacquemus,4700,8485.0,29-07-2025 13:28:32,0.4461,Luxoso,Alta,44.61,Blazer
+Jaqueta matelassê com capuz,Karl Lagerfeld Jeans,1658,3758.0,29-07-2025 13:28:32,0.5588,Pouco Luxoso,Baixa,55.88,Jaqueta
+Jaqueta bomber V-Emblem de couro,Versace Jeans Couture,5403,9002.0,29-07-2025 13:28:32,0.3998,Luxoso,Alta,39.98,Jaqueta
+Jaqueta jeans matelassê,Karl Lagerfeld Jeans,1658,3758.0,29-07-2025 13:28:32,0.5588,Pouco Luxoso,Baixa,55.88,Jaqueta
+Jaqueta Bones de couro gravado,AMIRI,8794,29289.0,29-07-2025 13:28:32,0.6998,Luxoso,Alta,69.98,Jaqueta
+Jaqueta bomber Portland,Tommy Hilfiger,1784,2628.0,29-07-2025 13:28:32,0.3212,Pouco Luxoso,Baixa,32.12,Jaqueta
+Jaqueta jeans com respingos de tinta,DSQUARED2,1763,4448.0,29-07-2025 13:28:32,0.6036,Pouco Luxoso,Baixa,60.36,Jaqueta
+Jaqueta jeans cropped,DSQUARED2,1664,4198.0,29-07-2025 13:28:32,0.6036,Pouco Luxoso,Baixa,60.36,Jaqueta
+Jaqueta leve Ami De Coeur,AMI Paris,4940,7053.0,29-07-2025 13:28:32,0.2996,Luxoso,Alta,29.96,Jaqueta
+Jaqueta Faber com capuz,Canada Goose,5808,9713.0,29-07-2025 13:28:32,0.402,Luxoso,Alta,40.2,Jaqueta
+Jaqueta x Racing Bulls de couro,HUGO,3156,5260.0,29-07-2025 13:28:32,0.4,Luxoso,Baixa,40.0,Jaqueta
+Jaqueta Paradigm Chilliwack com capuz,Canada Goose,11886,25003.0,29-07-2025 13:28:32,0.5246,Muito Luxuoso,Alta,52.46,Jaqueta
+Jaqueta bomber com logo,AMI Paris,5130,7398.0,29-07-2025 13:28:32,0.3066,Luxoso,Alta,30.66,Jaqueta
+Jaqueta isolada 180GR,Rossignol,1282,3194.0,29-07-2025 13:28:32,0.5986,Pouco Luxoso,Baixa,59.86,Jaqueta
+Jaqueta com padronagem abstrata,The North Face,1691,4373.0,29-07-2025 13:28:32,0.6133,Pouco Luxoso,Baixa,61.33,Jaqueta
+Jaqueta bomber NSE,The North Face,1459,3771.0,29-07-2025 13:28:32,0.6131,Pouco Luxoso,Baixa,61.31,Jaqueta
+Jaqueta biker de couro,Karl Lagerfeld,4730,10742.0,29-07-2025 13:28:32,0.5597,Luxoso,Alta,55.97,Jaqueta
+Jaqueta de camurça,Emporio Armani,13814,24911.0,29-07-2025 13:28:32,0.4455,Muito Luxuoso,Alta,44.55,Jaqueta
+Colete matelassê com patch de logo,Tommy Hilfiger,2634,5061.0,29-07-2025 13:28:32,0.4795,Luxoso,Baixa,47.95,Colete
+Jaqueta matelassê HyBridge de tricô,Canada Goose,8575,11909.0,29-07-2025 13:28:32,0.28,Luxoso,Alta,28.0,Jaqueta
+Jaqueta Retro Neptuse 1996,The North Face,5669,9480.0,29-07-2025 13:28:32,0.402,Luxoso,Alta,40.2,Jaqueta
+Jaqueta impermeável Rupert,Canada Goose,7525,12584.0,29-07-2025 13:28:32,0.402,Luxoso,Alta,40.2,Jaqueta
+Jaqueta com logo bordado,Karl Lagerfeld Jeans,890,2013.0,29-07-2025 13:28:32,0.5579,Pouco Luxoso,Baixa,55.79,Jaqueta
+Jaqueta assimétrica,Comme des Garçons Homme Plus,15065,21379.0,29-07-2025 13:28:32,0.2953,Muito Luxuoso,Alta,29.53,Jaqueta
+Jaqueta bomber Medusa Head,Versace,10849,20285.0,29-07-2025 13:28:32,0.4652,Muito Luxuoso,Alta,46.52,Jaqueta
+Jaqueta J68W,ACRONYM,12374,17672.0,29-07-2025 13:28:32,0.2998,Muito Luxuoso,Alta,29.98,Jaqueta
+Jaqueta Bedale Waxed,Barbour,4206,7022.0,29-07-2025 13:28:32,0.401,Luxoso,Baixa,40.1,Jaqueta
+Jaqueta de couro com acabamento canelado,Emporio Armani,7001,12343.0,29-07-2025 13:28:32,0.4328,Luxoso,Alta,43.28,Jaqueta
+Blazer com abertura frontal,Random Identities,1670,5307.0,29-07-2025 13:28:32,0.6853,Pouco Luxoso,Baixa,68.53,Blazer
+Jaqueta Nomader,Patagonia,1707,2672.0,29-07-2025 13:28:32,0.3612,Pouco Luxoso,Baixa,36.12,Jaqueta
+Jaqueta com logo jacquard,Versace Jeans Couture,5306,9426.0,29-07-2025 13:28:32,0.4371,Luxoso,Alta,43.71,Jaqueta
+Jaqueta Elliot matelassê,Parajumpers,3366,4673.0,29-07-2025 13:28:32,0.2797,Luxoso,Baixa,27.97,Jaqueta
+Jaqueta corta-vento North Dome,The North Face,1528,2409.0,29-07-2025 13:28:32,0.3657,Pouco Luxoso,Baixa,36.57,Jaqueta
+Jaqueta jeans com patch de logo,Karl Lagerfeld Jeans,890,2013.0,29-07-2025 13:28:32,0.5579,Pouco Luxoso,Baixa,55.79,Jaqueta
+Blazer descontruído com listras 4-Bar,Thom Browne,15778,21913.0,29-07-2025 13:28:32,0.28,Muito Luxuoso,Alta,28.0,Blazer
+Colete de mesh com estampa corrida,Y-3,1349,2405.0,29-07-2025 13:28:32,0.4391,Pouco Luxoso,Baixa,43.91,Colete
+Jaqueta Chicago Chore,Carter Young,2607,5916.0,29-07-2025 13:28:32,0.5593,Luxoso,Baixa,55.93,Jaqueta
+Jaqueta bomber Represent Owners' Club,Represent,3383,5950.0,29-07-2025 13:28:32,0.4314,Luxoso,Baixa,43.14,Jaqueta
+Colete de couro,Alexander McQueen,16323,24171.0,29-07-2025 13:28:32,0.3247,Muito Luxuoso,Alta,32.47,Colete
+Jaqueta bicolor,Balmain,18602,29400.0,29-07-2025 13:28:32,0.3673,Muito Luxuoso,Alta,36.73,Jaqueta
+Colete matelassê Terra com zíper,Polo Ralph Lauren,2618,4408.0,29-07-2025 13:28:32,0.4061,Luxoso,Baixa,40.61,Colete
+Jaqueta com patch de bússola,Stone Island,7951,11239.0,29-07-2025 13:28:32,0.2926,Luxoso,Alta,29.26,Jaqueta
+Jaqueta J14GT,ACRONYM,10124,16867.0,29-07-2025 13:28:32,0.3998,Muito Luxuoso,Alta,39.98,Jaqueta
+Jaqueta matelassê com zíper,Parajumpers,3174,4407.0,29-07-2025 13:28:32,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Jaqueta x Yinka Ilori dupla face,The North Face,2381,3217.0,29-07-2025 13:28:32,0.2599,Luxoso,Baixa,25.99,Jaqueta
+Jaqueta gola alta,SANDRO,3058,5090.0,29-07-2025 13:28:32,0.3992,Luxoso,Baixa,39.92,Jaqueta
+Jaqueta jeans com logo,DSQUARED2,2787,5031.0,29-07-2025 13:28:32,0.446,Luxoso,Baixa,44.6,Jaqueta
+1996 Retro Nuptse puffer jacket,The North Face,3891,6006.0,29-07-2025 13:28:32,0.3521,Luxoso,Baixa,35.21,Diferentes
+Jaqueta G9 Harrington de camurça,Baracuta,5574,7742.0,29-07-2025 13:28:32,0.28,Luxoso,Alta,28.0,Jaqueta
+Jaqueta biker de camurça,Giuseppe Zanotti,6041,19080.0,29-07-2025 13:28:32,0.6834,Luxoso,Alta,68.34,Jaqueta
+Jaqueta esportiva com bordado de borboleta,Needles,1948,3876.0,29-07-2025 13:28:32,0.4974,Pouco Luxoso,Baixa,49.74,Jaqueta
+Jaqueta Haven,OUR LEGACY,2482,18927.0,29-07-2025 13:28:32,0.8689,Luxoso,Baixa,86.89,Jaqueta
+Jaqueta Norwood Chiodo,Golden Goose,10480,,29-07-2025 13:28:32,,Muito Luxuoso,Alta,,Jaqueta
+Produto,Marca,Preço,Preço Original,Data,Desconto,Categoria Luxo,Media,Desconto Percentual,Classificação
+Jaqueta Corbridge,Barbour,2682,4789,29-07-2025 13:31:46,0.44,Luxoso,Baixa,44.0,Jaqueta
+Jaqueta de couro,Roberto Cavalli,2245,5660,29-07-2025 13:31:46,0.6034,Luxoso,Baixa,60.34,Jaqueta
+Jaqueta matelassê com capuz,Columbia,1160,1678,29-07-2025 13:31:46,0.3087,Pouco Luxoso,Baixa,30.87,Jaqueta
+Jaqueta jeans com capuz,1989 STUDIO,5255,11700,29-07-2025 13:31:46,0.5509,Luxoso,Alta,55.09,Jaqueta
+Jaqueta com estampa de logo,Columbia,1798,2481,29-07-2025 13:31:46,0.2753,Pouco Luxoso,Baixa,27.53,Jaqueta
+Jaqueta Tommy Hilfiger,Tommy Hilfiger,2230,3285,29-07-2025 13:31:46,0.3212,Luxoso,Baixa,32.12,Jaqueta
+Jaqueta Bedale,Barbour,4424,6551,29-07-2025 13:31:46,0.3247,Luxoso,Baixa,32.47,Jaqueta
+Jaqueta de couro,SANDRO,6071,12131,29-07-2025 13:31:46,0.4995,Luxoso,Alta,49.95,Jaqueta
+Jaqueta com motivo Polo Pony,Polo Ralph Lauren,1370,1730,29-07-2025 13:31:46,0.2081,Pouco Luxoso,Baixa,20.81,Jaqueta
+Jaqueta bomber com bordado,A BATHING APE®,10094,17019,29-07-2025 13:31:46,0.4069,Muito Luxuoso,Alta,40.69,Jaqueta
+Jaqueta Powder Pass Hybrid,Columbia,1134,1577,29-07-2025 13:31:46,0.2809,Pouco Luxoso,Baixa,28.09,Jaqueta
+Jaqueta de linho,Boggi Milano,1344,2396,29-07-2025 13:31:46,0.4391,Pouco Luxoso,Baixa,43.91,Jaqueta
+1996 Retro Nuptse jacket,The North Face,3930,6139,29-07-2025 13:31:46,0.3598,Luxoso,Baixa,35.98,Diferentes
+Jaqueta Sten-at,Moorer,8196,9476,29-07-2025 13:31:46,0.1351,Luxoso,Alta,13.51,Jaqueta
+Jaqueta Petronel,Parajumpers,3989,5539,29-07-2025 13:31:46,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Jaqueta esportiva LR-18,Giuseppe Zanotti,1426,5130,29-07-2025 13:31:46,0.722,Pouco Luxoso,Baixa,72.2,Jaqueta
+Jaqueta Saikuru matelassê,The North Face,2459,3112,29-07-2025 13:31:46,0.2098,Luxoso,Baixa,20.98,Jaqueta
+Jaqueta bomber oversized,Random Identities,1176,3736,29-07-2025 13:31:46,0.6852,Pouco Luxoso,Baixa,68.52,Jaqueta
+Jaqueta TNF Cordura®,The North Face,1176,1837,29-07-2025 13:31:46,0.3598,Pouco Luxoso,Baixa,35.98,Jaqueta
+Jaqueta com abotoamento e punhos canelados,LOEWE,16950,23821,29-07-2025 13:31:46,0.2884,Muito Luxuoso,Alta,28.84,Jaqueta
+Jaqueta Reedition de vinil,Courrèges,8530,11816,29-07-2025 13:31:46,0.2781,Luxoso,Alta,27.81,Jaqueta
+Jaqueta de linho e algodão,Boggi Milano,1866,3328,29-07-2025 13:31:46,0.4393,Pouco Luxoso,Baixa,43.93,Jaqueta
+Jaqueta x Yinka Ilori dupla face,The North Face,2381,3217,29-07-2025 13:31:46,0.2599,Luxoso,Baixa,25.99,Jaqueta
+Jaqueta bomber Medusa Head,Versace,10849,20285,29-07-2025 13:31:46,0.4652,Muito Luxuoso,Alta,46.52,Jaqueta
+Jaqueta Elliot matelassê,Parajumpers,3366,4673,29-07-2025 13:31:46,0.2797,Luxoso,Baixa,27.97,Jaqueta
+Jaqueta com logo jacquard,Versace Jeans Couture,5306,9426,29-07-2025 13:31:46,0.4371,Luxoso,Alta,43.71,Jaqueta
+Jaqueta com efeito mescla,Boggi Milano,1069,2662,29-07-2025 13:31:46,0.5984,Pouco Luxoso,Baixa,59.84,Jaqueta
+Jaqueta com padronagem abstrata,The North Face,1691,4373,29-07-2025 13:31:46,0.6133,Pouco Luxoso,Baixa,61.33,Jaqueta
+Jaqueta bomber NSE,The North Face,1459,3771,29-07-2025 13:31:46,0.6131,Pouco Luxoso,Baixa,61.31,Jaqueta
+Jaqueta Funhoggers com capuz,Patagonia,1428,2099,29-07-2025 13:31:46,0.3197,Pouco Luxoso,Baixa,31.97,Jaqueta
+Jaqueta Silence Monogram de couro,Daily Paper,5121,7529,29-07-2025 13:31:46,0.3198,Luxoso,Alta,31.98,Jaqueta
+Jaqueta Easy Winter 2.0 com capuz,Blauer,2197,3616,29-07-2025 13:31:46,0.3924,Luxoso,Baixa,39.24,Jaqueta
+Jaqueta Nomader,Patagonia,1707,2672,29-07-2025 13:31:46,0.3612,Pouco Luxoso,Baixa,36.12,Jaqueta
+Blazer de alfaiataria,Karl Lagerfeld,1953,4430,29-07-2025 13:31:46,0.5591,Pouco Luxoso,Baixa,55.91,Blazer
+Jaqueta Sena matelassê,Parajumpers,3845,5339,29-07-2025 13:31:46,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Jaqueta acolchoada com logo oculto,DSQUARED2,1917,4838,29-07-2025 13:31:46,0.6038,Pouco Luxoso,Baixa,60.38,Jaqueta
+Jaqueta com patch de bússola,Stone Island,7951,11239,29-07-2025 13:31:46,0.2926,Luxoso,Alta,29.26,Jaqueta
+Jaqueta Workwear,LEMAIRE,6185,7679,29-07-2025 13:31:46,0.1946,Luxoso,Alta,19.46,Jaqueta
+Jaqueta bomber Represent Owners' Club,Represent,3383,5950,29-07-2025 13:31:46,0.4314,Luxoso,Baixa,43.14,Jaqueta
+Jaqueta matelassê com zíper,Parajumpers,3174,4407,29-07-2025 13:31:46,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Jaqueta bomber com zíper,SANDRO,3708,6173,29-07-2025 13:31:46,0.3993,Luxoso,Baixa,39.93,Jaqueta
+Jaqueta bomber de couro com zíper,Burberry,10878,27500,29-07-2025 13:31:46,0.6044,Muito Luxuoso,Alta,60.44,Jaqueta
+Blazer com abertura frontal,Random Identities,1670,5307,29-07-2025 13:31:46,0.6853,Pouco Luxoso,Baixa,68.53,Blazer
+Jaqueta de couro,Sunflower,6935,9838,29-07-2025 13:31:46,0.2951,Luxoso,Alta,29.51,Jaqueta
+Jaqueta Tommy matelassê,Parajumpers,3845,5339,29-07-2025 13:31:46,0.2798,Luxoso,Baixa,27.98,Jaqueta
+Colete de couro,Alexander McQueen,16323,24171,29-07-2025 13:31:46,0.3247,Muito Luxuoso,Alta,32.47,Colete
+Jaqueta bomber acolchoada,ENTIRE STUDIOS,3200,7097,29-07-2025 13:31:46,0.5491,Luxoso,Baixa,54.91,Jaqueta
+Jaqueta de camurça,Emporio Armani,13814,24911,29-07-2025 13:31:46,0.4455,Muito Luxuoso,Alta,44.55,Jaqueta
+Jaqueta bomber de cetim com tag de logo,Dolce & Gabbana,7800,13000,29-07-2025 13:31:46,0.4,Luxoso,Alta,40.0,Jaqueta
+Jaqueta Chicago Chore,Carter Young,2607,5916,29-07-2025 13:31:46,0.5593,Luxoso,Baixa,55.93,Jaqueta
+Jaqueta IP xadrez,Burberry,7072,17650,29-07-2025 13:31:46,0.5993,Luxoso,Alta,59.93,Jaqueta
+Jaqueta de couro com zíper,Giuseppe Zanotti,4809,13500,29-07-2025 13:31:46,0.6438,Luxoso,Baixa,64.38,Jaqueta
+Jaqueta leve,Homme Plissé Issey Miyake,4458,7956,29-07-2025 13:31:46,0.4397,Luxoso,Baixa,43.97,Jaqueta
+Jaqueta de couro com acabamento canelado,Emporio Armani,7001,12343,29-07-2025 13:31:46,0.4328,Luxoso,Alta,43.28,Jaqueta
+Jaqueta jeans cropped,DSQUARED2,1664,4198,29-07-2025 13:31:46,0.6036,Pouco Luxoso,Baixa,60.36,Jaqueta
+Blazer de jersey,ETRO,10154,17714,29-07-2025 13:31:46,0.4268,Muito Luxuoso,Alta,42.68,Blazer
+Blazer de linho,Boggi Milano,2134,5326,29-07-2025 13:31:46,0.5993,Luxoso,Baixa,59.93,Blazer
+Jaqueta assimétrica,Comme des Garçons Homme Plus,15065,21379,29-07-2025 13:31:46,0.2953,Muito Luxuoso,Alta,29.53,Jaqueta
+Blazer com abotoamento duplo,Tagliatore,5115,8519,29-07-2025 13:31:46,0.3996,Luxoso,Alta,39.96,Blazer
+Jaqueta Retro Nuptse 96,The North Face,3037,4593,29-07-2025 13:31:46,0.3388,Luxoso,Baixa,33.88,Jaqueta
+Jaqueta Dryvent Mono,The North Face,2667,4207,29-07-2025 13:31:46,0.3661,Luxoso,Baixa,36.61,Jaqueta
+Parka leve,Stone Island,10220,12792,29-07-2025 13:31:46,0.2011,Muito Luxuoso,Alta,20.11,Diferentes
+Jaqueta Retro Neptuse 1996,The North Face,5669,9480,29-07-2025 13:31:46,0.402,Luxoso,Alta,40.2,Jaqueta
+Jaqueta cropped color block,Martine Rose,6338,13198,29-07-2025 13:31:46,0.5198,Luxoso,Alta,51.98,Jaqueta
+Jaqueta bomber com logo,AMI Paris,5130,7398,29-07-2025 13:31:46,0.3066,Luxoso,Alta,30.66,Jaqueta
+Jaqueta Barden,Moorer,6695,13975,29-07-2025 13:31:46,0.5209,Luxoso,Alta,52.09,Jaqueta
+Blazer Dine,Karl Lagerfeld,2706,6143,29-07-2025 13:31:46,0.5595,Luxoso,Baixa,55.95,Blazer
+Jaqueta Harrington,Lacoste,2249,3314,29-07-2025 13:31:46,0.3214,Luxoso,Baixa,32.14,Jaqueta
+Jaqueta bomber com bolsos,DSQUARED2,3280,8285,29-07-2025 13:31:46,0.6041,Luxoso,Baixa,60.41,Jaqueta
+Blazer com detalhe de fivela,DSQUARED2,7381,13328,29-07-2025 13:31:46,0.4462,Luxoso,Alta,44.62,Blazer
+Jaqueta OG Detroit,Carhartt WIP,2438,3209,29-07-2025 13:31:46,0.2403,Luxoso,Baixa,24.03,Jaqueta
+Jaqueta de algodão,Stone Island,10144,12841,29-07-2025 13:31:46,0.21,Muito Luxuoso,Alta,21.0,Jaqueta
+Jaqueta com efeito amassado,Stone Island,4053,5786,29-07-2025 13:31:46,0.2995,Luxoso,Baixa,29.95,Jaqueta
+Jaqueta de couro com zíper,Sunflower,7292,12150,29-07-2025 13:31:46,0.3998,Luxoso,Alta,39.98,Jaqueta
+Jaqueta de couro,Carhartt WIP,2574,4010,29-07-2025 13:31:46,0.3581,Luxoso,Baixa,35.81,Jaqueta
+Blazer com abotoamento duplo,Tagliatore,4299,7585,29-07-2025 13:31:46,0.4332,Luxoso,Baixa,43.32,Blazer
+Jaqueta esportiva com logo,DSQUARED2,2928,7395,29-07-2025 13:31:46,0.6041,Luxoso,Baixa,60.41,Jaqueta
+Jaqueta OG Detroit,Carhartt WIP,2222,3136,29-07-2025 13:31:46,0.2915,Luxoso,Baixa,29.15,Jaqueta
+Jaqueta Membrana 3L TC,Stone Island,7062,10084,29-07-2025 13:31:46,0.2997,Luxoso,Alta,29.97,Jaqueta
+Jaqueta Chrome-R,C.P. Company,1920,5734,29-07-2025 13:31:46,0.6652,Pouco Luxoso,Baixa,66.52,Jaqueta
+Jaqueta NSE com estampa,The North Face,2402,4284,29-07-2025 13:31:46,0.4393,Luxoso,Baixa,43.93,Jaqueta
+Blazer com abotoamento duplo,MSGM,1566,3950,29-07-2025 13:31:46,0.6035,Pouco Luxoso,Baixa,60.35,Blazer
+Jaqueta de couro com zíper,DSQUARED2,4478,11315,29-07-2025 13:31:46,0.6042,Luxoso,Baixa,60.42,Jaqueta
+Jaqueta jeans La Veste De-Nîmes,Jacquemus,5117,8529,29-07-2025 13:31:46,0.4,Luxoso,Alta,40.0,Jaqueta
+Jaqueta xadrez dupla face,Burberry,6555,9750,29-07-2025 13:31:46,0.3277,Luxoso,Alta,32.77,Jaqueta
+Jaqueta acolchoada com abotoamento,DSQUARED2,1763,4448,29-07-2025 13:31:46,0.6036,Pouco Luxoso,Baixa,60.36,Jaqueta
+Jaqueta de couro,Rick Owens,15336,27044,29-07-2025 13:31:46,0.4329,Muito Luxuoso,Alta,43.29,Jaqueta
+Jaqueta impermeável Rupert,Canada Goose,7525,12584,29-07-2025 13:31:46,0.402,Luxoso,Alta,40.2,Jaqueta
+Jaqueta com patch de bússola,Stone Island,5463,7512,29-07-2025 13:31:46,0.2728,Luxoso,Alta,27.28,Jaqueta
+Jaqueta Square Cross,SANDRO,3566,5090,29-07-2025 13:31:46,0.2994,Luxoso,Baixa,29.94,Jaqueta
+Jaqueta Vrct x Manchester United,adidas,2126,3539,29-07-2025 13:31:46,0.3993,Luxoso,Baixa,39.93,Jaqueta
+Jaqueta x Brain Dead,adidas,2726,4007,29-07-2025 13:31:46,0.3197,Luxoso,Baixa,31.97,Jaqueta
+Jaqueta college com detalhe de patch,AMIRI,16364,17099,29-07-2025 13:31:46,0.043,Muito Luxuoso,Alta,4.3,Jaqueta
+Jaqueta Field,Bally,12567,21019,29-07-2025 13:31:46,0.4021,Muito Luxuoso,Alta,40.21,Jaqueta
+Moletom Sicon Ative com zíper,BOSS,1127,1610,29-07-2025 13:31:46,0.3,Pouco Luxoso,Baixa,30.0,Diferentes
+Jaqueta Tusco,Napapijri,4357,8988,29-07-2025 13:31:46,0.5152,Luxoso,Baixa,51.52,Jaqueta
 Produto,Preço,Preço Original,Desconto,Desconto Percentual,Categoria Luxo,Classificação,Data
-Jaqueta Corbridge,2682,4789,0.44,44.0,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com motivo Polo Pony,1370,1730,0.2081,20.81,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta matelassê com capuz,1160,1678,0.3087,30.87,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro,2245,5660,0.6034,60.34,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta jeans com capuz,5255,11700,0.5509,55.09,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Bedale,4424,6551,0.3247,32.47,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com estampa de logo,1798,2481,0.2753,27.53,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Tommy Hilfiger,2230,3285,0.3212,32.12,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber com bordado,10094,17019,0.4069,40.69,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Powder Pass Hybrid,1134,1577,0.2809,28.09,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro,6071,12131,0.4995,49.95,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Sten-at,8196,9476,0.1351,13.51,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Reedition de vinil,8530,11816,0.2781,27.81,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta esportiva Laurel,5356,9656,0.4453,44.53,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com abotoamento e punhos canelados,16950,23821,0.2884,28.84,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber Medusa Head,10849,20285,0.4652,46.52,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-1996 Retro Nuptse jacket,2572,4593,0.44,44.0,Luxoso,Diferentes,28-07-2025 12:05:15
-Jaqueta Petronel,3989,5539,0.2798,27.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de linho,1344,2396,0.4391,43.91,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Saikuru matelassê,2459,3112,0.2098,20.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta TNF Cordura®,1176,1837,0.3598,35.98,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber oversized,1176,3736,0.6852,68.52,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com logo jacquard,5306,9426,0.4371,43.71,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Funhoggers com capuz,1428,2099,0.3197,31.97,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta x Yinka Ilori dupla face,2381,3217,0.2599,25.99,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta esportiva LR-18,1426,5130,0.722,72.2,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com efeito mescla,1069,2662,0.5984,59.84,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Easy Winter 2.0 com capuz,2197,3616,0.3924,39.24,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com padronagem abstrata,1691,4373,0.6133,61.33,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber NSE,1459,3771,0.6131,61.31,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber Represent Owners' Club,3383,5950,0.4314,43.14,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta jeans cropped,2419,4366,0.4459,44.59,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Elliot matelassê,3366,4673,0.2797,27.97,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com patch de bússola,7951,11239,0.2926,29.26,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta matelassê com zíper,3174,4407,0.2798,27.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de linho e algodão,1866,3328,0.4393,43.93,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Sena matelassê,3845,5339,0.2798,27.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta jeans,1512,2362,0.3599,35.99,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Workwear,6185,7679,0.1946,19.46,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer de jersey,9920,17714,0.44,44.0,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta Nomader,1707,2672,0.3612,36.12,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber de cetim com tag de logo,7800,13000,0.4,40.0,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer com abertura frontal,1670,5307,0.6853,68.53,Pouco Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta bomber de couro com zíper,10878,27500,0.6044,60.44,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta assimétrica,15065,21379,0.2953,29.53,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Silence Monogram de couro,5121,7529,0.3198,31.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com capuz e zíper,1905,2646,0.28,28.0,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com efeito amassado,4053,5786,0.2995,29.95,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro,6935,9838,0.2951,29.51,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer com abotoamento duplo,5115,8519,0.3996,39.96,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta leve,4458,7956,0.4397,43.97,Luxoso,Jaqueta,28-07-2025 12:05:15
-Parka leve,10220,12792,0.2011,20.11,Muito Luxuoso,Diferentes,28-07-2025 12:05:15
-Jaqueta Chicago Chore,2607,5916,0.5593,55.93,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber com zíper,3708,6173,0.3993,39.93,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta acolchoada com logo oculto,1917,4838,0.6038,60.38,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro com zíper,4478,11315,0.6042,60.42,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de camurça,13814,24911,0.4455,44.55,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Barden,6695,13975,0.5209,52.09,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber com bolsos,3280,8285,0.6041,60.41,Luxoso,Jaqueta,28-07-2025 12:05:15
-Colete de couro,16323,24171,0.3247,32.47,Muito Luxuoso,Colete,28-07-2025 12:05:15
-Jaqueta cropped color block,6338,13198,0.5198,51.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Tommy matelassê,3845,5339,0.2798,27.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer com detalhe de fivela,9226,13328,0.3078,30.78,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta de algodão,9982,11744,0.15,15.0,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro com acabamento canelado,8751,12497,0.2998,29.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer de alfaiataria,2130,4430,0.5192,51.92,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta Retro Nuptse 96,3123,4593,0.3201,32.01,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Chrome-R,1920,5734,0.6652,66.52,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber com logo,5130,7398,0.3066,30.66,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta esportiva com logo,2928,7395,0.6041,60.41,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta xadrez dupla face,6555,9750,0.3277,32.77,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Membrana 3L TC,7062,10084,0.2997,29.97,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta acolchoada com abotoamento,1763,4448,0.6036,60.36,Pouco Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta OG Detroit,2222,3136,0.2915,29.15,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Merton Wax,3079,7237,0.5745,57.45,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta NSE com estampa,2402,4284,0.4393,43.93,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer Dine,2706,6143,0.5595,55.95,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta IP xadrez,7072,17650,0.5993,59.93,Luxoso,Jaqueta,28-07-2025 12:05:15
-Moletom Sicon Ative com zíper,1127,1610,0.3,30.0,Pouco Luxoso,Diferentes,28-07-2025 12:05:15
-Jaqueta Harrington,2249,3314,0.3214,32.14,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Dryvent Mono,2667,4207,0.3661,36.61,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro,3218,4010,0.1975,19.75,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta bomber acolchoada,3200,7097,0.5491,54.91,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta OG Detroit,2438,3209,0.2403,24.03,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Taylon,7370,11628,0.3662,36.62,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta college com detalhe de patch,16364,17099,0.043,4.3,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Blazer com abotoamento duplo,4299,7585,0.4332,43.32,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta de couro,15336,27044,0.4329,43.29,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Tusco,4357,8988,0.5152,51.52,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta Retro Neptuse 1996,5669,9480,0.402,40.2,Luxoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta com patch de bússola,5463,7512,0.2728,27.28,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer risca de giz com amarração,12802,24612,0.4798,47.98,Muito Luxuoso,Blazer,28-07-2025 12:05:15
-Jaqueta Field,12567,21019,0.4021,40.21,Muito Luxuoso,Jaqueta,28-07-2025 12:05:15
-Jaqueta de couro com zíper,7292,12150,0.3998,39.98,Luxoso,Jaqueta,28-07-2025 12:05:15
-Blazer de linho,2134,5326,0.5993,59.93,Luxoso,Blazer,28-07-2025 12:05:15
-Jaqueta de couro com zíper,4809,13500,0.6438,64.38,Luxoso,Jaqueta,28-07-2025 12:05:15
+Jaqueta Corbridge,2682,4789,0.44,44.0,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro,2245,5660,0.6034,60.34,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta matelassê com capuz,1160,1678,0.3087,30.87,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta jeans com capuz,5255,11700,0.5509,55.09,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com estampa de logo,1798,2481,0.2753,27.53,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Tommy Hilfiger,2230,3285,0.3212,32.12,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Bedale,4424,6551,0.3247,32.47,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro,6071,12131,0.4995,49.95,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com motivo Polo Pony,1370,1730,0.2081,20.81,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber com bordado,10094,17019,0.4069,40.69,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Powder Pass Hybrid,1134,1577,0.2809,28.09,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de linho,1344,2396,0.4391,43.91,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+1996 Retro Nuptse jacket,3930,6139,0.3598,35.98,Luxoso,Diferentes,29-07-2025 10:37:51
+Jaqueta Sten-at,8196,9476,0.1351,13.51,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Petronel,3989,5539,0.2798,27.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta esportiva LR-18,1426,5130,0.722,72.2,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Saikuru matelassê,2459,3112,0.2098,20.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber oversized,1176,3736,0.6852,68.52,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta TNF Cordura®,1176,1837,0.3598,35.98,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com abotoamento e punhos canelados,16950,23821,0.2884,28.84,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Reedition de vinil,8530,11816,0.2781,27.81,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de linho e algodão,1866,3328,0.4393,43.93,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta x Yinka Ilori dupla face,2381,3217,0.2599,25.99,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber Medusa Head,10849,20285,0.4652,46.52,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Elliot matelassê,3366,4673,0.2797,27.97,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com logo jacquard,5306,9426,0.4371,43.71,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com efeito mescla,1069,2662,0.5984,59.84,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com padronagem abstrata,1691,4373,0.6133,61.33,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber NSE,1459,3771,0.6131,61.31,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Funhoggers com capuz,1428,2099,0.3197,31.97,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Silence Monogram de couro,5121,7529,0.3198,31.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Easy Winter 2.0 com capuz,2197,3616,0.3924,39.24,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Nomader,1707,2672,0.3612,36.12,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer de alfaiataria,1953,4430,0.5591,55.91,Pouco Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta Sena matelassê,3845,5339,0.2798,27.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta acolchoada com logo oculto,1917,4838,0.6038,60.38,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com patch de bússola,7951,11239,0.2926,29.26,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Workwear,6185,7679,0.1946,19.46,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber Represent Owners' Club,3383,5950,0.4314,43.14,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta matelassê com zíper,3174,4407,0.2798,27.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber com zíper,3708,6173,0.3993,39.93,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber de couro com zíper,10878,27500,0.6044,60.44,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com capuz e zíper,1905,2646,0.28,28.0,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer com abertura frontal,1670,5307,0.6853,68.53,Pouco Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta de couro,6935,9838,0.2951,29.51,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Tommy matelassê,3845,5339,0.2798,27.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Colete de couro,16323,24171,0.3247,32.47,Muito Luxuoso,Colete,29-07-2025 10:37:51
+Jaqueta bomber acolchoada,3200,7097,0.5491,54.91,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de camurça,13814,24911,0.4455,44.55,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber de cetim com tag de logo,7800,13000,0.4,40.0,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Chicago Chore,2607,5916,0.5593,55.93,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta IP xadrez,7072,17650,0.5993,59.93,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro com zíper,4809,13500,0.6438,64.38,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta leve,4458,7956,0.4397,43.97,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro com acabamento canelado,7001,12343,0.4328,43.28,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta jeans cropped,1664,4198,0.6036,60.36,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer de jersey,10154,17714,0.4268,42.68,Muito Luxuoso,Blazer,29-07-2025 10:37:51
+Blazer de linho,2134,5326,0.5993,59.93,Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta assimétrica,15065,21379,0.2953,29.53,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Blazer com abotoamento duplo,5115,8519,0.3996,39.96,Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta Retro Nuptse 96,3037,4593,0.3388,33.88,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Dryvent Mono,2667,4207,0.3661,36.61,Luxoso,Jaqueta,29-07-2025 10:37:51
+Parka leve,10220,12792,0.2011,20.11,Muito Luxuoso,Diferentes,29-07-2025 10:37:51
+Jaqueta Retro Neptuse 1996,5669,9480,0.402,40.2,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta cropped color block,6338,13198,0.5198,51.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta bomber com logo,5130,7398,0.3066,30.66,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Barden,6695,13975,0.5209,52.09,Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer Dine,2706,6143,0.5595,55.95,Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta bomber com bolsos,3280,8285,0.6041,60.41,Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer com detalhe de fivela,7381,13328,0.4462,44.62,Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta OG Detroit,2438,3209,0.2403,24.03,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de algodão,10144,12841,0.21,21.0,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com efeito amassado,4053,5786,0.2995,29.95,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro com zíper,7292,12150,0.3998,39.98,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro,2574,4010,0.3581,35.81,Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer com abotoamento duplo,4299,7585,0.4332,43.32,Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta esportiva com logo,2928,7395,0.6041,60.41,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta OG Detroit,2222,3136,0.2915,29.15,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Membrana 3L TC,7062,10084,0.2997,29.97,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Chrome-R,1920,5734,0.6652,66.52,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta NSE com estampa,2402,4284,0.4393,43.93,Luxoso,Jaqueta,29-07-2025 10:37:51
+Blazer com abotoamento duplo,1566,3950,0.6035,60.35,Pouco Luxoso,Blazer,29-07-2025 10:37:51
+Jaqueta de couro com zíper,4478,11315,0.6042,60.42,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta jeans La Veste De-Nîmes,5117,8529,0.4,40.0,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta xadrez dupla face,6555,9750,0.3277,32.77,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta acolchoada com abotoamento,1763,4448,0.6036,60.36,Pouco Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta de couro,15336,27044,0.4329,43.29,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta impermeável Rupert,7525,12584,0.402,40.2,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta com patch de bússola,5463,7512,0.2728,27.28,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Square Cross,3566,5090,0.2994,29.94,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Vrct x Manchester United,2126,3539,0.3993,39.93,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta x Brain Dead,2726,4007,0.3197,31.97,Luxoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta college com detalhe de patch,16364,17099,0.043,4.3,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Jaqueta Field,12567,21019,0.4021,40.21,Muito Luxuoso,Jaqueta,29-07-2025 10:37:51
+Moletom Sicon Ative com zíper,1127,1610,0.3,30.0,Pouco Luxoso,Diferentes,29-07-2025 10:37:51
+Jaqueta Tusco,4357,8988,0.5152,51.52,Luxoso,Jaqueta,29-07-2025 10:37:51

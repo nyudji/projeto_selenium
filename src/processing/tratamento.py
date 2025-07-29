@@ -129,14 +129,12 @@ def tratamento():
             if file.startswith("part-") and file.endswith(".parquet"):
                 full_path = os.path.join(path_parquet, file)
                 if os.path.getsize(full_path) > 0:
-                    shutil.copy(full_path, os.path.join(path_parquet, "dados_tratado.parquet"))
-                    print("Arquivo parquet copiado e renomeado com sucesso!")
+                    shutil.move(full_path, os.path.join(path_parquet, "dados_tratado.parquet"))
+                    logging.info("Parquet tratado salvo como dados_tratado.parquet")
                     time.sleep(15)
                     for lixo in os.listdir(path_parquet):
                         if lixo.startswith("_SUCCESS") or lixo.endswith(".crc") or lixo.startswith("part-"):
                             os.remove(os.path.join(path_parquet, lixo))
-                    print("Arquivos auxiliares removidos após o tempo de espera.")
-        logging.info("Arquivos auxiliares Parquet (se houver) removidos.")
 
         # Exportar também para CSV geral com Pandas
         df_jaquetas.toPandas().to_csv(os.path.join(path_csv, "jaquetas_todos.csv"), mode='a', header=True, index=False)
